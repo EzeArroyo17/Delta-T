@@ -1,0 +1,74 @@
+.conocenos {
+    @include gridArea(auto auto, auto, "texto texto imagen", center, center);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding-top: 100px;
+    .textoConocenos {
+        grid-area: texto;
+        width: 60%;
+
+        .texto {
+            @include flex(column, center, center);
+
+            h2 {
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 18, 4px;
+                letter-spacing: 7%;
+                text-align: center;
+                color: nth($list: $colores , $n: 3);
+            }
+
+            h3 {
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 46px;
+                text-align: center;
+                color: nth($list: $colores , $n: 3);
+                display: inline;
+            }
+
+            p {
+                top: 1629px;
+                left: 84px;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 23px;
+                text-align: left;
+                color: nth($list: $colores , $n: 1);
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        grid-area: imagen;
+
+        .imagenesConocenos {
+            ul {
+                li {
+                    list-style-type: none;
+                    margin-bottom: 10px;
+
+                    img {
+                        width: 300px;
+                        height: 248px;
+                        border-radius: 25px;
+                        opacity: 0px;
+                        padding-bottom: 20px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#imagen {
+    width: 308px;
+    height: 484px;
+    border-radius: 25px;
+}

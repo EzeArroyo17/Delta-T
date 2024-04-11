@@ -1,0 +1,70 @@
+.contacto {
+    background-color: nth($list: $colores , $n: 1);
+    width: 1280px;
+    height: 529px;
+    top: 3730px;
+    left: 81px;
+    gap: 0px;
+    border-radius: 55px 0px 0px 0px;
+    opacity: 0px;
+    @include flex(row, center, center);
+
+    div {
+        @include flex(column, center, center);
+
+        h2 {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 46px;
+            text-align: left;
+            display: inline;
+
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            text-align: left;
+        }
+    }
+
+    form {
+
+        label {
+            position: relative;
+        }
+
+        input {}
+
+        .intermedioFormulario {
+            label {}
+
+            input {
+                width: 600px;
+                height: 43px;
+                border-radius: 10px;
+                opacity: 0px;
+
+            }
+        }
+
+        textarea {
+            width: 600px;
+            height: 144px;
+            top: 4006px;
+            left: 732px;
+            border-radius: 10px;
+
+        }
+
+        button {
+            width: 300px;
+            height: 43px;
+            border-radius: 10px;
+            color: nth($list: $colores , $n: 2);
+            background-color: nth($list: $colores , $n: 3);
+
+        }
+    }
+}

@@ -1,0 +1,538 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "League Spartan", sans-serif;
+}
+
+header .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #26163F;
+  height: 91px;
+  padding-left: 50px;
+}
+header .header div img {
+  width: 150px;
+  height: 80px;
+  top: 24px;
+  left: 81px;
+  display: block;
+}
+header .header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .header nav ul li {
+  list-style: none;
+  padding-right: 100px;
+}
+header .header nav ul li a {
+  text-decoration: none;
+  width: 127px;
+  height: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ECF8F9;
+  display: inline;
+}
+header .imagen-central {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #ECF8F9;
+  position: relative;
+}
+header .imagen-central img {
+  background-size: cover;
+  background-position: center;
+  height: 875px;
+  width: 2380px;
+  top: -500px;
+}
+header .imagen-central div {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header .imagen-central div .subrayado {
+  width: 886px;
+  height: 120px;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 59, 8px;
+  position: relative;
+}
+header .imagen-central div .subrayado span::before {
+  content: ""; /* Necesario para que los pseudo-elementos tengan contenido */
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  width: 98%; /* Ajusta el ancho al del contenedor */
+  height: 38px; /* Ajusta la altura al del contenedor */
+  background-color: #E55807; /* Color del rectángulo */
+  z-index: -1; /* Coloca el rectángulo detrás del texto */
+}
+header .imagen-central div p {
+  padding-top: 50px;
+  width: 813px;
+  height: 70px;
+  font-weight: 400;
+  top: 380px;
+  left: 314px;
+  font-size: 35px;
+  line-height: 35px;
+}
+
+footer {
+  background-color: #26163F;
+  height: 166px;
+}
+footer img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 169px;
+  height: 38px;
+  top: 4355px;
+  left: 637px;
+  gap: 0px;
+  opacity: 0px;
+}
+footer div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.diferenciales {
+  justify-content: center;
+  padding-top: 200px;
+}
+.diferenciales div {
+  text-align: center;
+}
+.diferenciales div h3 {
+  display: inline;
+  color: #E55807;
+  width: 485px;
+  height: 46px;
+  top: 1126px;
+  left: 478px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 46px;
+}
+.diferenciales ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 100px;
+}
+.diferenciales ul li {
+  list-style-type: none;
+}
+.diferenciales ul li img {
+  width: 300px;
+  height: auto;
+  top: 1229px;
+  left: 129px;
+  background-size: cover;
+  background-position: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  font-family: "League Spartan", sans-serif;
+  gap: 100px;
+}
+.cards div {
+  width: 500px;
+  height: 280px;
+  top: 714px;
+  left: 945px;
+  gap: 0px;
+  border-radius: 18px;
+  opacity: 0px;
+  background-color: #0766AD;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.cards div div {
+  color: #ECF8F9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards div div .cardImagen {
+  padding-right: 320px;
+  padding-top: 0;
+}
+.cards div div h2 {
+  padding-top: 18px;
+  width: 353px;
+  height: 27px;
+  top: 854px;
+  left: 965px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 27.6px;
+  text-align: left;
+}
+.cards div div p {
+  padding-top: 15px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27.6px;
+  text-align: left;
+  width: 366px;
+  height: 79px;
+  top: 889px;
+  left: 965px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.clientes div {
+  text-align: center;
+}
+.clientes div h2 {
+  width: 619px;
+  height: 46px;
+  top: 50%;
+  left: 50%;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  color: #E55807;
+  display: inline;
+}
+.clientes .imgClientes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.clientes .imgClientes .fila {
+  display: flex;
+}
+.clientes .imgClientes .fila li {
+  list-style: none;
+  padding-left: 20px;
+}
+.clientes .imgClientes .fila li img {
+  padding-left: 30px;
+  width: 200px;
+  height: cover;
+  top: 3274px;
+  left: 114px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenTele {
+  height: 65;
+  padding-top: 30px;
+}
+
+.imagenVersat {
+  height: 100px;
+}
+
+.conocenos {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "texto texto imagen";
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.conocenos .textoConocenos {
+  grid-area: texto;
+  width: 60%;
+}
+.conocenos .textoConocenos .texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conocenos .textoConocenos .texto h2 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 18, 4px;
+  letter-spacing: 7%;
+  text-align: center;
+  color: #E55807;
+}
+.conocenos .textoConocenos .texto h3 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: center;
+  color: #E55807;
+  display: inline;
+}
+.conocenos .textoConocenos .texto p {
+  top: 1629px;
+  left: 84px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  color: #0766AD;
+}
+.conocenos div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  grid-area: imagen;
+}
+.conocenos div .imagenesConocenos ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.conocenos div .imagenesConocenos ul li img {
+  width: 300px;
+  height: 248px;
+  border-radius: 25px;
+  opacity: 0px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+#imagen {
+  width: 308px;
+  height: 484px;
+  border-radius: 25px;
+}
+
+.servicios {
+  color: #0766AD;
+  background-color: #26163F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.servicios h2 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 18.4px;
+  letter-spacing: 0.07em;
+  display: inline;
+  padding-top: 50px;
+}
+.servicios h3 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 46px;
+  display: inline;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.servicios .cardsOfrecimientos {
+  color: #E55807;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosUno {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal {
+  padding-right: 200px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div {
+  width: 412px;
+  height: 297px;
+  top: 2341px;
+  left: 952px;
+  gap: 0px;
+  border-radius: 18px;
+  opacity: 0px;
+  padding-bottom: 400px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div img {
+  width: 412px;
+  height: 250px;
+  top: 2341px;
+  left: 952px;
+  gap: 0px;
+  border-radius: 18px 18px 0px 0px;
+  opacity: 0px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div div h3 {
+  width: 371px;
+  height: 27px;
+  top: 2555px;
+  left: 973px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 27.6px;
+  text-align: left;
+  display: inline;
+}
+.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div div p {
+  width: 371px;
+  height: 23px;
+  top: 2590px;
+  left: 972px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 24.15px;
+  text-align: left;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal {
+  flex: 0 0 calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding-right: 200px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div {
+  width: 412px;
+  height: 297px;
+  top: 2341px;
+  left: 952px;
+  gap: 0px;
+  border-radius: 18px;
+  opacity: 0px;
+  padding-bottom: 400px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div img {
+  width: 412px;
+  height: 250px;
+  top: 2341px;
+  left: 952px;
+  gap: 0px;
+  border-radius: 18px 18px 0px 0px;
+  opacity: 0px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div {
+  text-align: left;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div h3 {
+  width: 371px;
+  height: 27px;
+  top: 2555px;
+  left: 973px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 27.6px;
+  text-align: left;
+  display: inline;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div p {
+  width: 371px;
+  height: 23px;
+  top: 2590px;
+  left: 972px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 24.15px;
+  text-align: left;
+}
+
+.contacto {
+  background-color: #0766AD;
+  width: 1280px;
+  height: 529px;
+  top: 3730px;
+  left: 81px;
+  gap: 0px;
+  border-radius: 55px 0px 0px 0px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contacto div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto div h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 46px;
+  text-align: left;
+  display: inline;
+}
+.contacto div p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
+.contacto form label {
+  position: relative;
+}
+.contacto form .intermedioFormulario input {
+  width: 600px;
+  height: 43px;
+  border-radius: 10px;
+  opacity: 0px;
+}
+.contacto form textarea {
+  width: 600px;
+  height: 144px;
+  top: 4006px;
+  left: 732px;
+  border-radius: 10px;
+}
+.contacto form button {
+  width: 300px;
+  height: 43px;
+  border-radius: 10px;
+  color: #ECF8F9;
+  background-color: #E55807;
+}
+
+/*# sourceMappingURL=style.css.map */

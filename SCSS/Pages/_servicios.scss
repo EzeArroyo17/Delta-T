@@ -1,0 +1,157 @@
+.servicios {
+    color: nth($list: $colores , $n: 1);
+    background-color: nth($list: $colores , $n: 4);
+    @include flex(column, center, center);
+
+    img {}
+
+    h2 {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 18.4px;
+        letter-spacing: 0.07em;
+        display: inline;
+        padding-top: 50px;
+    }
+
+    h3 {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 46px;
+        display: inline;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .cardsOfrecimientos {
+        color: nth($list: $colores , $n: 3);
+        @include flex(column, center, center);
+        padding-top: 100px;
+
+        .ofrecimientosUno {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+
+            .cardFinal {
+                padding-right: 200px;
+
+                div {
+                    width: 412px;
+                    height: 297px;
+                    top: 2341px;
+                    left: 952px;
+                    gap: 0px;
+                    border-radius: 18px;
+                    opacity: 0px;
+                    padding-bottom: 400px;
+
+                    img {
+                        width: 412px;
+                        height: 250px;
+                        top: 2341px;
+                        left: 952px;
+                        gap: 0px;
+                        border-radius: 18px 18px 0px 0px;
+                        opacity: 0px;
+                    }
+
+                    div {
+                        h3 {
+                            width: 371px;
+                            height: 27px;
+                            top: 2555px;
+                            left: 973px;
+                            gap: 0px;
+                            opacity: 0px;
+                            font-size: 24px;
+                            font-weight: 800;
+                            line-height: 27.6px;
+                            text-align: left;
+                            display: inline;
+                        }
+
+                        p {
+                            width: 371px;
+                            height: 23px;
+                            top: 2590px;
+                            left: 972px;
+                            gap: 0px;
+                            opacity: 0px;
+                            font-size: 21px;
+                            font-weight: 400;
+                            line-height: 24.15px;
+                            text-align: left;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .ofrecimientosDos {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+
+            .cardFinal {
+                flex: 0 0 calc(33.33% - 20px);
+                margin-bottom: 20px;
+                padding-right: 200px;
+
+                div {
+                    width: 412px;
+                    height: 297px;
+                    top: 2341px;
+                    left: 952px;
+                    gap: 0px;
+                    border-radius: 18px;
+                    opacity: 0px;
+                    padding-bottom: 400px;
+
+                    img {
+                        width: 412px;
+                        height: 250px;
+                        top: 2341px;
+                        left: 952px;
+                        gap: 0px;
+                        border-radius: 18px 18px 0px 0px;
+                        opacity: 0px;
+                    }
+
+                    div {
+                        text-align: left;
+
+                        h3 {
+                            width: 371px;
+                            height: 27px;
+                            top: 2555px;
+                            left: 973px;
+                            gap: 0px;
+                            opacity: 0px;
+                            font-size: 24px;
+                            font-weight: 800;
+                            line-height: 27.6px;
+                            text-align: left;
+                            display: inline;
+                        }
+
+                        p {
+                            width: 371px;
+                            height: 23px;
+                            top: 2590px;
+                            left: 972px;
+                            gap: 0px;
+                            opacity: 0px;
+                            font-size: 21px;
+                            font-weight: 400;
+                            line-height: 24.15px;
+                            text-align: left;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
