@@ -1,4 +1,5 @@
 .clientes {
+    padding-top: 100px;
     div{
         text-align: center;
         h2 {
@@ -17,7 +18,7 @@
 
     .imgClientes {
         @include flex(column, center, center);
-        padding-top: 100px;
+        padding-top: 80px;
         .fila {
             display: flex;
 

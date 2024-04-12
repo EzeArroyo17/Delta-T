@@ -80,40 +80,61 @@ header .imagen-central div .subrayado {
   position: relative;
 }
 header .imagen-central div .subrayado span::before {
-  content: ""; /* Necesario para que los pseudo-elementos tengan contenido */
+  content: "";
+  /* Necesario para que los pseudo-elementos tengan contenido */
   position: absolute;
   top: 120px;
   left: 10px;
-  width: 98%; /* Ajusta el ancho al del contenedor */
-  height: 38px; /* Ajusta la altura al del contenedor */
-  background-color: #E55807; /* Color del rectángulo */
-  z-index: -1; /* Coloca el rectángulo detrás del texto */
+  width: 98%;
+  /* Ajusta el ancho al del contenedor */
+  height: 38px;
+  /* Ajusta la altura al del contenedor */
+  background-color: #E55807;
+  /* Color del rectángulo */
+  z-index: -1;
+  /* Coloca el rectángulo detrás del texto */
 }
 header .imagen-central div p {
   padding-top: 50px;
   width: 813px;
   height: 70px;
   font-weight: 400;
-  top: 380px;
-  left: 314px;
+  top: 0px;
+  left: 50px;
   font-size: 35px;
   line-height: 35px;
+}
+header .imagen-central .deltaArriba {
+  color: rgba(255, 255, 255, 0.0509803922);
+  top: 100px;
+  left: 90px;
+  font-size: 128px;
+  font-weight: 900;
+  line-height: 117.76px;
+  display: inline;
+  position: absolute;
+}
+header .imagen-central .deltaAbajo {
+  color: rgba(255, 255, 255, 0.1764705882);
+  bottom: 0px;
+  right: 20px;
+  font-size: 128px;
+  font-weight: 900;
+  line-height: 117.76px;
+  position: absolute;
 }
 
 footer {
   background-color: #26163F;
-  height: 166px;
-}
-footer img {
+  height: 250px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 169px;
-  height: 38px;
-  top: 4355px;
-  left: 637px;
-  gap: 0px;
-  opacity: 0px;
+}
+footer img {
+  width: 120px;
+  height: 100px;
 }
 footer div ul {
   display: flex;
@@ -121,6 +142,22 @@ footer div ul {
   justify-content: center;
   align-items: center;
 }
+footer div ul li {
+  color: #ECF8F9;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 18.4px;
+  text-align: left;
+  list-style-type: none;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+footer div ul li img {
+  width: 75px;
+  height: 70px;
+  padding-right: 15px;
+}
+
 .diferenciales {
   justify-content: center;
   padding-top: 200px;
@@ -216,6 +253,9 @@ footer div ul {
   opacity: 0px;
 }
 
+.clientes {
+  padding-top: 100px;
+}
 .clientes div {
   text-align: center;
 }
@@ -235,7 +275,7 @@ footer div ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .clientes .imgClientes .fila {
   display: flex;
@@ -275,6 +315,7 @@ footer div ul {
   justify-content: center;
   align-items: center;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .conocenos .textoConocenos {
   grid-area: texto;
@@ -285,6 +326,7 @@ footer div ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
 }
 .conocenos .textoConocenos .texto h2 {
   font-weight: 300;
@@ -325,7 +367,8 @@ footer div ul {
   width: 300px;
   height: 248px;
   border-radius: 25px;
-  opacity: 0px;
+  top: 1784px;
+  left: 734px;
   padding-bottom: 20px;
   margin-bottom: 10px;
 }
@@ -338,11 +381,14 @@ footer div ul {
 
 .servicios {
   color: #0766AD;
-  background-color: #26163F;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("/Archivos/Logo-Imagen-central/fondo-cards-central.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .servicios h2 {
   font-size: 20px;
@@ -374,7 +420,7 @@ footer div ul {
   margin-bottom: 20px;
 }
 .servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal {
-  padding-right: 200px;
+  padding-right: 100px;
 }
 .servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div {
   width: 412px;
@@ -388,10 +434,7 @@ footer div ul {
 }
 .servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div img {
   width: 412px;
-  height: 250px;
-  top: 2341px;
-  left: 952px;
-  gap: 0px;
+  height: 240px;
   border-radius: 18px 18px 0px 0px;
   opacity: 0px;
 }
@@ -428,24 +471,17 @@ footer div ul {
 .servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal {
   flex: 0 0 calc(33.33% - 20px);
   margin-bottom: 20px;
-  padding-right: 200px;
+  padding-right: 100px;
 }
 .servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div {
   width: 412px;
   height: 297px;
-  top: 2341px;
-  left: 952px;
-  gap: 0px;
   border-radius: 18px;
-  opacity: 0px;
   padding-bottom: 400px;
 }
 .servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div img {
   width: 412px;
-  height: 250px;
-  top: 2341px;
-  left: 952px;
-  gap: 0px;
+  height: 240px;
   border-radius: 18px 18px 0px 0px;
   opacity: 0px;
 }
@@ -479,60 +515,106 @@ footer div ul {
 }
 
 .contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contacto .cuerpoFormulario {
   background-color: #0766AD;
-  width: 1280px;
+  width: 60%;
   height: 529px;
-  top: 3730px;
-  left: 81px;
-  gap: 0px;
-  border-radius: 55px 0px 0px 0px;
+  border-radius: 55px;
   opacity: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.contacto div {
+.contacto .cuerpoFormulario div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #ECF8F9;
 }
-.contacto div h2 {
+.contacto .cuerpoFormulario div h2 {
   font-size: 50px;
   font-weight: 700;
   line-height: 46px;
-  text-align: left;
-  display: inline;
+  padding-right: 110px;
 }
-.contacto div p {
+.contacto .cuerpoFormulario div p {
   font-size: 20px;
   font-weight: 400;
   line-height: 23px;
   text-align: left;
+  padding-left: 50px;
 }
-.contacto form label {
-  position: relative;
+.contacto .cuerpoFormulario form {
+  padding-right: 50px;
 }
-.contacto form .intermedioFormulario input {
+.contacto .cuerpoFormulario form .primeraFormulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contacto .cuerpoFormulario form .primeraFormulario input {
+  width: 290px;
+  height: 43px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+.contacto .cuerpoFormulario form .intermedioFormulario {
+  padding-top: 20px;
+}
+.contacto .cuerpoFormulario form .intermedioFormulario input {
   width: 600px;
   height: 43px;
   border-radius: 10px;
   opacity: 0px;
+  padding-left: 20px;
 }
-.contacto form textarea {
+.contacto .cuerpoFormulario form div {
+  padding-top: 20px;
+}
+.contacto .cuerpoFormulario form div textarea {
   width: 600px;
   height: 144px;
   top: 4006px;
   left: 732px;
   border-radius: 10px;
+  padding-left: 20px;
 }
-.contacto form button {
+.contacto .cuerpoFormulario form div button {
+  padding-top: 5px;
   width: 300px;
   height: 43px;
   border-radius: 10px;
   color: #ECF8F9;
   background-color: #E55807;
+  font-family: League Spartan;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 18.4px;
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 13.8px;
+  text-align: left;
+  color: rgb(147, 188, 219);
+}
+
+textarea::placeholder {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 13.8px;
+  text-align: left;
+  color: rgb(147, 188, 219);
+  padding-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

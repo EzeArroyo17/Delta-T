@@ -4,11 +4,12 @@ header {
         background-color: nth($list: $colores , $n: 4);
         height: 91px;
         padding-left: 50px;
+
         div {
             img {
                 width: 150px;
                 height: 80px;
-                top:24px;
+                top: 24px;
                 left: 81px;
                 display: block
             }
@@ -18,9 +19,11 @@ header {
 
             ul {
                 @include flex(row, center, center);
+
                 li {
                     list-style: none;
                     padding-right: 100px;
+
                     a {
                         text-decoration: none;
                         width: 127px;
@@ -38,63 +41,90 @@ header {
         }
     }
 
-   
 
-    .imagen-central{
+
+    .imagen-central {
         @include flex(column, space-between, center);
         color: nth($list: $colores , $n: 2);
         position: relative;
+
         img {
             background-size: cover;
-            background-position:center;
+            background-position: center;
             height: 875px;
             width: 2380px;
-            top:-500px;
+            top: -500px;
         }
-        div{
+
+        div {
             position: absolute;
             z-index: 1;
             width: 100%;
             height: 100%;
             @include flex(column, center, center);
             text-align: center;
-            h1 {
-            }
 
-            h2 {
-            }
-    
-            .subrayado{
+            h1 {}
+
+            h2 {}
+
+            .subrayado {
                 width: 886px;
                 height: 120px;
                 font-weight: 900;
                 font-size: 65px;
-                line-height: 59,8px;
+                line-height: 59, 8px;
                 position: relative;
 
-                span::before{
-                    content: ""; /* Necesario para que los pseudo-elementos tengan contenido */
+                span::before {
+                    content: "";
+                    /* Necesario para que los pseudo-elementos tengan contenido */
                     position: absolute;
                     top: 120px;
-                    left:10px;
-                    width: 98%; /* Ajusta el ancho al del contenedor */
-                    height: 38px; /* Ajusta la altura al del contenedor */
-                    background-color:nth($list:$colores , $n:3 ); /* Color del rectángulo */
-                    z-index: -1; /* Coloca el rectángulo detrás del texto */
+                    left: 10px;
+                    width: 98%;
+                    /* Ajusta el ancho al del contenedor */
+                    height: 38px;
+                    /* Ajusta la altura al del contenedor */
+                    background-color: nth($list: $colores , $n: 3);
+                    /* Color del rectángulo */
+                    z-index: -1;
+                    /* Coloca el rectángulo detrás del texto */
                 }
             }
-    
+
             p {
                 padding-top: 50px;
-                width: 813px; 
+                width: 813px;
                 height: 70px;
                 font-weight: 400;
-                top: 380px;
-                left: 314px;
+                top: 0px;
+                left: 50px;
                 font-size: 35px;
                 line-height: 35px;
-                
             }
+        }
+
+        .deltaArriba {
+            color: #FFFFFF0D;
+            top: 100px;
+            left: 90px;
+            font-size: 128px;
+            font-weight: 900;
+            line-height: 117.76px;
+            display: inline;
+            position: absolute;
+        }
+
+        .deltaAbajo {
+            color:#FFFFFF2D;;
+            bottom: 0px;
+            right:20px;
+            font-size: 128px;
+            font-weight: 900;
+            line-height: 117.76px;
+            position: absolute;
+            
         }
     }
 

@@ -40,7 +40,7 @@
             </nav>
         </div>
         <div class="imagen-central">
-            <img src="./Archivos/Logo-Imagen-central/IMAGEN CARRIER 3-CENTRAL.jpg" alt="">
+            <img src="./Archivos/Logo-Imagen-central/imagen-header.jpg" alt="">
             <div>
                 <h1>Tecnico en refrigeracion</h1>
                 <h2>Tecnico en calefaccion</h2>
@@ -48,7 +48,8 @@
                 <p>Somos Delta-T, expertos en soluciones de aire
                     acondicionado y calefacción para tu empresa.</p>
             </div>
-
+            <p class="deltaArriba">DELTA T</p>
+            <p class="deltaAbajo">DELTA T</p>
         </div>
 
     </header>
@@ -105,7 +106,7 @@
                 </div>
         </section>
 
-        <section class="conocenos">
+        <section class="conocenos" id="conocenos">
 
             <div class="textoConocenos">
                 <div class="texto">
@@ -147,9 +148,8 @@
 
         </section>
 
-        <section id="#servicios" class="servicios">
+        <section id="servicios" class="servicios">
 
-            <img src="" alt="">
             <h2>NUESTROS SERVICIOS</h2>
             <h3>Descubrí lo que tenemos para ofrecerte</h3>
 
@@ -158,7 +158,7 @@
                 <div class="ofrecimientosUno">
 
                     <div class="cardFinal">
-                        <div class="aires" class="card" style="width: 18rem;">
+                        <div class="aires bg-light" class="card" style="width: 25.8rem;">
                             <img src="./Archivos/imagenes-card-final/mejores-aires-acondicionados-relacion-calidad-precio-puedes-comprar_4.webp"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
@@ -170,9 +170,8 @@
                     </div>
 
                     <div class="cardFinal">
-                        <div class="venta" class="card" style="width: 18rem;">
-                            <img id="bgh"
-                                src="./Archivos/imagenes-card-final/aire-acondicionado-multisplit-bgh-inverter-unidades-exteriores.jpg"
+                        <div class="venta bg-light" class="card" style="width: 25.8rem;">
+                            <img src="./Archivos/imagenes-card-final/aire-acondicionado-multisplit-bgh-inverter-unidades-exteriores.jpg"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h3>VENTA DE EQUIPOS - BGH</h3>
@@ -182,7 +181,7 @@
                     </div>
 
                     <div class="cardFinal">
-                        <div class="calefaccion" class="card" style="width: 18rem;">
+                        <div class="calefaccion bg-light" class="card" style="width: 25.8rem;">
                             <img src="./Archivos/imagenes-card-final/CalderaCentral.jpg.webp" class="card-img-top"
                                 alt="...">
                             <div class="card-body">
@@ -197,7 +196,7 @@
                 <div class="ofrecimientosDos">
 
                     <div class="cardFinal">
-                        <div class="enfriamiento" class="card" style="width: 18rem;">
+                        <div class="enfriamiento bg-light" class="card" style="width: 25.8rem;">
                             <img src="./Archivos/imagenes-card-final/chiller.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h3>ENFRIAMIENTO DE AGUA</h3>
@@ -208,7 +207,7 @@
                     </div>
 
                     <div class="cardFinal">
-                        <div class="camaras" class="card" style="width: 18rem;">
+                        <div class="camaras bg-light" class="card" style="width: 25.8rem;">
                             <img src="./Archivos/imagenes-card-final/control-de-temperatura.jpg" class="card-img-top"
                                 alt="...">
                             <div class="card-body">
@@ -219,7 +218,7 @@
                     </div>
 
                     <div class="cardFinal">
-                        <div class="cerificacion" class="card" style="width: 18rem;">
+                        <div class="cerificacion bg-light" class="card" style="width: 25.8rem;">
                             <img src="./Archivos/imagenes-card-final/primer-adulto-listo-firmar-documentos_23-2148377754.jpg"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
@@ -236,7 +235,7 @@
 
         </section>
 
-        <section class="clientes">
+        <section class="clientes" id="clientes">
             <div>
                 <h2 class="textoClientes">Algunos de nuestros clientes</h2>
             </div>
@@ -264,40 +263,48 @@
 
 
         <section id="contacto" class="contacto">
-            <!-- Sección de contacto -->
-            <div>
-                <h2>Contactate con nosotros</h2>
-                <p>Estamos para brindarte soluciones confiable ¡Confiá en nosotros para tus necesidades de climatización
-                    y refrigeración!</p>
-            </div>
 
-            <form action="enviar.php" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+            <div class="cuerpoFormulario">
 
-                <label for="número de celular">Número de celular</label>
-                <input type="number" name="número de celular" id="número de celular">
-                <div class="intermedioFormulario">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
+                <div>
+                    <h2>Contactate con nosotros</h2>
+                    <p>Estamos para brindarte soluciones confiable ¡Confiá en nosotros para tus necesidades de
+                        climatización
+                        y refrigeración!</p>
                 </div>
 
+                <form action="enviar.php" method="post">
+                    <div class="primeraFormulario">
+                        <input class="nombre" type="text" id="nombre" name="nombre" required placeholder="Nombre">
 
-                <button type="submit">Enviar</button>
-            </form>
+                        <input class="phone" type="phone" name="número de celular" id="número de celular"
+                            placeholder="Número de celular">
+                    </div>
+
+                    <div class="intermedioFormulario">
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                    </div>
+                    <div>
+                        <textarea id="mensaje" name="mensaje" required placeholder="¿Cuál es tu consulta?"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <img src="./Archivos/Logo-Imagen-central/Logo_DELTA_T.png" alt="">
+        <img src="./Archivos/Logo-Imagen-central/Logo delta sin fondo.png" alt="">
         <div>
             <ul>
-                <li><img src="" alt="">+54 911 11 6515-7701</li>
-                <li><img src="" alt="">teruetalejandro@gmail.com</li>
-                <li><img src="" alt="">Buenos Aires, Argentina</li>
+                <li><img src="./Archivos/Iconos-card-uno/iconos-footer/icono-wspp.png" alt="">+54 911 11 6515-7701</li>
+                <li><img src="./Archivos/Iconos-card-uno/iconos-footer/icono-mail.png" alt="">teruetalejandro@gmail.com
+                </li>
+                <li><img src="./Archivos/Iconos-card-uno/iconos-footer/icono-ubicacion.png" alt="">Buenos Aires,
+                    Argentina</li>
             </ul>
         </div>
     </footer>

@@ -3,13 +3,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-padding-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
     .textoConocenos {
         grid-area: texto;
         width: 60%;
 
         .texto {
             @include flex(column, center, center);
+            text-align: left;
 
             h2 {
                 font-weight: 300;
@@ -52,12 +55,12 @@ padding-top: 100px;
                 li {
                     list-style-type: none;
                     margin-bottom: 10px;
-
                     img {
                         width: 300px;
                         height: 248px;
                         border-radius: 25px;
-                        opacity: 0px;
+                        top: 1784px;
+                        left: 734px;
                         padding-bottom: 20px;
                         margin-bottom: 10px;
                     }
