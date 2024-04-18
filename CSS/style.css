@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -6,61 +5,51 @@
 }
 
 html {
-  font-family: "League Spartan", sans-serif;
+  font-family: "League Spartan";
 }
 
-header .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+header {
   background-color: #26163F;
-  height: 91px;
-  padding-left: 50px;
 }
-header .header div img {
-  width: 150px;
-  height: 80px;
-  top: 24px;
-  left: 81px;
-  display: block;
+header nav div a {
+  padding-left: 150px;
 }
-header .header nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+header nav div a img {
+  width: 94px;
+  height: 77px;
 }
-header .header nav ul li {
-  list-style: none;
-  padding-right: 100px;
+header nav div button .menu-ham {
+  background-image: url(/Archivos/Iconos-card-uno/menu-hamburguesa.png);
+  box-shadow: none;
+  border: 0;
 }
-header .header nav ul li a {
-  text-decoration: none;
-  width: 127px;
-  height: 18px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 18px;
+header nav div .menu {
+  flex-grow: 0;
+}
+header nav div .menu ul .nav-item {
+  padding-right: 50px;
+}
+header nav div .menu ul .nav-item a {
   color: #ECF8F9;
-  display: inline;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.08em;
+  text-align: center;
 }
-header .imagen-central {
+header .imagenCentral {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   color: #ECF8F9;
   position: relative;
-}
-header .imagen-central img {
+  background-image: url(/Archivos/Logo-Imagen-central/imagen-header.jpg);
   background-size: cover;
   background-position: center;
   height: 875px;
-  width: 2380px;
-  top: -500px;
 }
-header .imagen-central div {
+header .imagenCentral div {
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -71,7 +60,7 @@ header .imagen-central div {
   align-items: center;
   text-align: center;
 }
-header .imagen-central div .subrayado {
+header .imagenCentral div .subrayado {
   width: 886px;
   height: 120px;
   font-weight: 900;
@@ -79,22 +68,17 @@ header .imagen-central div .subrayado {
   line-height: 59, 8px;
   position: relative;
 }
-header .imagen-central div .subrayado span::before {
+header .imagenCentral div .subrayado span::before {
   content: "";
-  /* Necesario para que los pseudo-elementos tengan contenido */
   position: absolute;
   top: 120px;
   left: 10px;
   width: 98%;
-  /* Ajusta el ancho al del contenedor */
   height: 38px;
-  /* Ajusta la altura al del contenedor */
   background-color: #E55807;
-  /* Color del rectángulo */
   z-index: -1;
-  /* Coloca el rectángulo detrás del texto */
 }
-header .imagen-central div p {
+header .imagenCentral div p {
   padding-top: 50px;
   width: 813px;
   height: 70px;
@@ -104,7 +88,7 @@ header .imagen-central div p {
   font-size: 35px;
   line-height: 35px;
 }
-header .imagen-central .deltaArriba {
+header .imagenCentral .deltaArriba {
   color: rgba(255, 255, 255, 0.0509803922);
   top: 100px;
   left: 90px;
@@ -114,7 +98,7 @@ header .imagen-central .deltaArriba {
   display: inline;
   position: absolute;
 }
-header .imagen-central .deltaAbajo {
+header .imagenCentral .deltaAbajo {
   color: rgba(255, 255, 255, 0.1764705882);
   bottom: 0px;
   right: 20px;
@@ -158,6 +142,384 @@ footer div ul li img {
   padding-right: 15px;
 }
 
+@media (max-width: 768px) {
+  header nav {
+    position: relative;
+  }
+  header nav div .menu ul .nav-item a {
+    text-align: left;
+  }
+  header .imagenCentral {
+    position: relative;
+  }
+  header .imagenCentral div h1 {
+    position: absolute;
+    text-align: left;
+    top: 150px;
+    left: 20px;
+  }
+  header .imagenCentral div h2 {
+    position: absolute;
+    text-align: left;
+    top: 200px;
+    left: 20px;
+  }
+  header .imagenCentral div .subrayado {
+    width: 500px;
+    height: 128px;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 50.5px;
+    text-align: left;
+    top: 250px;
+    left: 20px;
+    position: absolute;
+  }
+  header .imagenCentral div .subrayado span::before {
+    content: "";
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    width: 91%;
+    height: 28px;
+    background-color: #E55807;
+    z-index: -1;
+  }
+  header .imagenCentral div .subrayado span.subrayadoDos::before {
+    content: "";
+    position: absolute;
+    top: 183px;
+    left: 0px;
+    width: 63%;
+    height: 28px;
+    background-color: #E55807;
+    z-index: -1;
+  }
+  header .imagenCentral div p {
+    width: 500px;
+    height: 100px;
+    top: 440px;
+    left: 20px;
+    position: absolute;
+    display: inline;
+    text-align: left;
+  }
+  header .imagenCentral .deltaArriba {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  header .imagenCentral .deltaAbajo {
+    position: absolute;
+    top: 750px;
+    left: 200;
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    height: 430px;
+  }
+  footer .iconosFooter ul {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    padding: 0;
+  }
+  footer .iconosFooter ul li {
+    padding: 0;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 18.4px;
+    list-style-type: none;
+    padding-top: 20px;
+  }
+  footer .iconosFooter ul li img {
+    padding-right: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  header nav div a {
+    padding: 0;
+  }
+  header nav div .menu ul .nav-item {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  main .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 768px) {
+  main .diferenciales {
+    justify-content: center;
+    padding: 0;
+    padding-top: 80px;
+  }
+  main .diferenciales .imgDiferenciales {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+  }
+  main .diferenciales .imgDiferenciales li {
+    padding: 0;
+    padding-top: 35px;
+  }
+  main .diferenciales .imgDiferenciales li img {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  main .conocenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  main .conocenos .textoConocenos .texto h2 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 18, 4px;
+    letter-spacing: 7%;
+    text-align: center;
+    color: #E55807;
+    display: inline;
+  }
+  main .conocenos .textoConocenos .texto h3 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+    color: #E55807;
+    display: inline;
+  }
+  main .conocenos .textoConocenos .texto p {
+    width: 75%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    color: #0766AD;
+  }
+  main .conocenos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .conocenos div .imagenesConocenos ul {
+    padding: 0;
+  }
+  main .conocenos div .imagenesConocenos ul li img {
+    border-radius: 25px 25px 50px 50px;
+    width: 500px;
+    height: 350px;
+  }
+  main .conocenos div .parteDosImagen {
+    padding: 0;
+  }
+  main .conocenos div .parteDosImagen img {
+    padding: 0;
+    width: 500px;
+    height: 600px;
+  }
+  main .conocenos .imagenHover:hover {
+    transform: none;
+  }
+  main .conocenos .imagen:hover {
+    transform: none;
+  }
+}
+@media (max-width: 768px) {
+  main .clientes {
+    padding: 0;
+    padding-top: 80px;
+  }
+  main .clientes .imgClientes {
+    padding: 0;
+    padding-top: 30px;
+  }
+  main .clientes .imgClientes .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  main .clientes .imgClientes .fila li img {
+    padding: 15px;
+    width: 200px;
+    height: cover;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    font-family: "League Spartan";
+  }
+  main .servicios {
+    color: #ECF8F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #E55807 50%, #0766AD 50%);
+  }
+  main .servicios h3 {
+    text-align: center;
+  }
+  main .servicios .cardsOfrecimientos .ofrecimientosUno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .servicios .cardsOfrecimientos .ofrecimientosDos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+  main .hover:hover {
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  main #hoverUno:hover {
+    background-image: url(none);
+    cursor: pointer;
+  }
+  main .hoverDos:hover {
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  main #hoverDos:hover {
+    background-image: url(none);
+    cursor: pointer;
+  }
+}
+@media (max-width: 768px) {
+  main .contacto .cuerpoFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 650px;
+    border-radius: 28px;
+    padding: 0;
+  }
+  main .contacto .cuerpoFormulario div {
+    text-align: left;
+  }
+  main .contacto .cuerpoFormulario div h2 {
+    padding: 0;
+  }
+  main .contacto .cuerpoFormulario div p {
+    padding: 0;
+    padding-left: 20px;
+    text-align: center;
+  }
+  main .contacto .cuerpoFormulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  main .contacto .cuerpoFormulario form .primeraFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  main .contacto .cuerpoFormulario form .primeraFormulario input {
+    width: 310px;
+    height: 43px;
+    border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form .intermedioFormulario input {
+    width: 310px;
+    height: 43px;
+    border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form div textarea {
+    width: 310px;
+    height: 144px;
+    border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form div button {
+    width: 290px;
+    height: 43px;
+    border-radius: 10px;
+  }
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  gap: 100px;
+}
+.cards div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 450px;
+  height: 320px;
+  border-radius: 18px;
+  background-color: #0766AD;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  position: relative;
+}
+.cards div div {
+  color: #ECF8F9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards div div .cardImagen {
+  width: 85px;
+  height: 85px;
+  top: 30px;
+  left: 30px;
+  position: absolute;
+}
+.cards div div h2 {
+  padding-top: 80px;
+  width: 400px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 27.6px;
+  text-align: left;
+}
+.cards div div p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  width: 400px;
+  height: 60px;
+}
+
 .diferenciales {
   justify-content: center;
   padding-top: 200px;
@@ -195,62 +557,251 @@ footer div ul li img {
   background-position: center;
 }
 
-.cards {
-  display: flex;
-  flex-direction: row;
+.conocenos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: " texto texto texto imagen ";
+  padding-top: 100px;
+  padding-bottom: 100px;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
-  font-family: "League Spartan", sans-serif;
-  gap: 100px;
 }
-.cards div {
-  width: 500px;
-  height: 280px;
-  top: 714px;
-  left: 945px;
-  gap: 0px;
-  border-radius: 18px;
-  opacity: 0px;
-  background-color: #0766AD;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2509803922);
+.conocenos .textoConocenos {
+  grid-area: texto;
+  margin-left: 20px;
 }
-.cards div div {
-  color: #ECF8F9;
+.conocenos .textoConocenos .texto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.cards div div .cardImagen {
-  padding-right: 320px;
-  padding-top: 0;
+.conocenos .textoConocenos .texto h2 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #E55807;
 }
-.cards div div h2 {
-  padding-top: 18px;
-  width: 353px;
-  height: 27px;
-  top: 854px;
-  left: 965px;
-  gap: 0px;
-  opacity: 0px;
-  font-size: 25px;
+.conocenos .textoConocenos .texto h3 {
+  font-size: 50px;
   font-weight: 700;
+  color: #E55807;
+  text-align: left;
+}
+.conocenos .textoConocenos .texto p {
+  font-size: 20px;
+  font-weight: 350;
+  line-height: 23px;
+  color: #0766AD;
+}
+.conocenos div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  grid-area: imagen;
+  margin-right: 20px;
+}
+.conocenos div .imagenesConocenos {
+  padding-top: 40px;
+}
+.conocenos div .imagenesConocenos ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.conocenos div .imagenesConocenos ul li img {
+  width: 300px;
+  height: 248px;
+  border-radius: 25px 25px 50px 50px;
+  top: 1784px;
+  left: 734px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.conocenos div .parteDosImagen {
+  padding-top: 40px;
+}
+.conocenos div .parteDosImagen img {
+  width: 308px;
+  height: 484px;
+  border-radius: 25px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imagen:hover {
+  transform: scale(1.6);
+}
+
+.imagenHover:hover {
+  transform: scale(1.6);
+}
+
+.servicios {
+  color: #ECF8F9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #E55807 50%, #0766AD 50%);
+}
+.servicios h2 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 18.4px;
+  letter-spacing: 0.07em;
+  display: inline;
+  padding-top: 50px;
+}
+.servicios h3 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 46px;
+  display: inline;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.servicios .cardsOfrecimientos {
+  color: #E55807;
+}
+.servicios .cardsOfrecimientos .ofrecimientosUno {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal {
+  background-color: #ECF8F9;
+  border-radius: 18px;
+  width: 450px;
+  height: 350px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div img {
+  width: 100%;
+  height: 200px;
+  border-radius: 18px 18px 0px 0px;
+  object-fit: cover;
+}
+.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div div {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div div h3 {
+  width: 371px;
+  height: 27px;
+  font-size: 24px;
+  font-weight: 800;
   line-height: 27.6px;
   text-align: left;
 }
-.cards div div p {
-  padding-top: 15px;
+.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div div p {
+  padding-top: 10px;
+  width: 450px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24.15px;
+  text-align: left;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal {
+  background-color: #ECF8F9;
+  border-radius: 18px;
+  width: 450px;
+  height: 350px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div img {
+  width: 100%;
+  height: 200px;
+  border-radius: 18px 18px 0px 0px;
+  object-fit: cover;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div h3 {
+  width: 371px;
+  height: 27px;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 27.6px;
   text-align: left;
-  width: 366px;
-  height: 79px;
-  top: 889px;
-  left: 965px;
-  gap: 0px;
-  opacity: 0px;
+}
+.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div p {
+  padding-top: 10px;
+  width: 450px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24.15px;
+  text-align: left;
+}
+
+.certificacion {
+  background-color: #ECF8F9;
+  border-radius: 18px;
+  width: 450px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+.certificacion div img {
+  width: 100%;
+  height: 200px;
+  border-radius: 18px 18px 0px 0px;
+  object-fit: cover;
+}
+.certificacion div div {
+  padding-top: 20px;
+  position: absolute;
+  padding-left: 10px;
+}
+.certificacion div div h3 {
+  width: 381px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 27.6px;
+  text-align: left;
+}
+.certificacion div div p {
+  padding-top: 10px;
+  width: 450px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24.15px;
+  text-align: left;
+}
+
+.hover:hover {
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+#hoverUno:hover {
+  background-image: url(/Archivos/imagenes-card-final/imagenes-hover/imagen-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.hoverDos:hover {
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+#hoverDos:hover {
+  background-image: url(/Archivos/imagenes-card-final/imagenes-hover/imagen-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .clientes {
@@ -274,7 +825,7 @@ footer div ul li img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: normal;
   padding-top: 80px;
 }
 .clientes .imgClientes .fila {
@@ -304,229 +855,18 @@ footer div ul li img {
   height: 100px;
 }
 
-.conocenos {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  grid-template-areas: "texto texto imagen";
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.conocenos .textoConocenos {
-  grid-area: texto;
-  width: 60%;
-}
-.conocenos .textoConocenos .texto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-}
-.conocenos .textoConocenos .texto h2 {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 18, 4px;
-  letter-spacing: 7%;
-  text-align: center;
-  color: #E55807;
-}
-.conocenos .textoConocenos .texto h3 {
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 46px;
-  text-align: center;
-  color: #E55807;
-  display: inline;
-}
-.conocenos .textoConocenos .texto p {
-  top: 1629px;
-  left: 84px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 23px;
-  text-align: left;
-  color: #0766AD;
-}
-.conocenos div {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  grid-area: imagen;
-}
-.conocenos div .imagenesConocenos ul li {
-  list-style-type: none;
-  margin-bottom: 10px;
-}
-.conocenos div .imagenesConocenos ul li img {
-  width: 300px;
-  height: 248px;
-  border-radius: 25px;
-  top: 1784px;
-  left: 734px;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-}
-
-#imagen {
-  width: 308px;
-  height: 484px;
-  border-radius: 25px;
-}
-
-.servicios {
-  color: #0766AD;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url("/Archivos/Logo-Imagen-central/fondo-cards-central.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.servicios h2 {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 18.4px;
-  letter-spacing: 0.07em;
-  display: inline;
-  padding-top: 50px;
-}
-.servicios h3 {
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 46px;
-  display: inline;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.servicios .cardsOfrecimientos {
-  color: #E55807;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal {
-  padding-right: 100px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div {
-  width: 412px;
-  height: 297px;
-  top: 2341px;
-  left: 952px;
-  gap: 0px;
-  border-radius: 18px;
-  opacity: 0px;
-  padding-bottom: 400px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div img {
-  width: 412px;
-  height: 240px;
-  border-radius: 18px 18px 0px 0px;
-  opacity: 0px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div div h3 {
-  width: 371px;
-  height: 27px;
-  top: 2555px;
-  left: 973px;
-  gap: 0px;
-  opacity: 0px;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 27.6px;
-  text-align: left;
-  display: inline;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div div p {
-  width: 371px;
-  height: 23px;
-  top: 2590px;
-  left: 972px;
-  gap: 0px;
-  opacity: 0px;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 24.15px;
-  text-align: left;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal {
-  flex: 0 0 calc(33.33% - 20px);
-  margin-bottom: 20px;
-  padding-right: 100px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div {
-  width: 412px;
-  height: 297px;
-  border-radius: 18px;
-  padding-bottom: 400px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div img {
-  width: 412px;
-  height: 240px;
-  border-radius: 18px 18px 0px 0px;
-  opacity: 0px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div {
-  text-align: left;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div h3 {
-  width: 371px;
-  height: 27px;
-  top: 2555px;
-  left: 973px;
-  gap: 0px;
-  opacity: 0px;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 27.6px;
-  text-align: left;
-  display: inline;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div p {
-  width: 371px;
-  height: 23px;
-  top: 2590px;
-  left: 972px;
-  gap: 0px;
-  opacity: 0px;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 24.15px;
-  text-align: left;
-}
-
 .contacto {
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .contacto .cuerpoFormulario {
   background-color: #0766AD;
-  width: 60%;
+  width: 1280px;
   height: 529px;
   border-radius: 55px;
-  opacity: 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -542,15 +882,13 @@ footer div ul li img {
 .contacto .cuerpoFormulario div h2 {
   font-size: 50px;
   font-weight: 700;
-  line-height: 46px;
-  padding-right: 110px;
 }
 .contacto .cuerpoFormulario div p {
   font-size: 20px;
   font-weight: 400;
   line-height: 23px;
   text-align: left;
-  padding-left: 50px;
+  padding-left: 35px;
 }
 .contacto .cuerpoFormulario form {
   padding-right: 50px;
@@ -615,6 +953,196 @@ textarea::placeholder {
   text-align: left;
   color: rgb(147, 188, 219);
   padding-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  main .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  main .diferenciales {
+    justify-content: center;
+    padding: 0;
+    padding-top: 80px;
+  }
+  main .diferenciales .imgDiferenciales {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-top: 30px;
+  }
+  main .diferenciales .imgDiferenciales li {
+    padding: 0;
+    padding-top: 35px;
+  }
+  main .diferenciales .imgDiferenciales li img {
+    width: 350px;
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  main .conocenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  main .conocenos .textoConocenos .texto h2 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 18, 4px;
+    letter-spacing: 7%;
+    text-align: center;
+    color: #E55807;
+    display: inline;
+  }
+  main .conocenos .textoConocenos .texto h3 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: center;
+    color: #E55807;
+    display: inline;
+  }
+  main .conocenos .textoConocenos .texto p {
+    width: 75%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+    color: #0766AD;
+  }
+  main .conocenos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  main .conocenos div .imagenesConocenos {
+    padding: 0;
+  }
+  main .conocenos div .imagenesConocenos ul {
+    padding: 0;
+  }
+  main .conocenos div .imagenesConocenos ul li {
+    padding-top: 35px;
+  }
+  main .conocenos div .imagenesConocenos ul li img {
+    padding: 0;
+    border-radius: 25px 25px 50px 50px;
+    width: 500px;
+    height: 350px;
+  }
+  main .conocenos div .parteDosImagen {
+    padding: 0;
+  }
+  main .conocenos div .parteDosImagen img {
+    padding: 0;
+    width: 500px;
+    height: 600px;
+  }
+  main .conocenos .imagenHover:hover {
+    transform: none;
+  }
+  main .conocenos .imagen:hover {
+    transform: none;
+  }
+}
+@media (max-width: 1024px) {
+  main {
+    font-family: "League Spartan";
+  }
+  main .servicios {
+    color: #ECF8F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #E55807 50%, #0766AD 50%);
+  }
+  main .servicios h3 {
+    text-align: center;
+  }
+  main .servicios .cardsOfrecimientos .ofrecimientosUno {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main .servicios .cardsOfrecimientos .ofrecimientosDos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  main .hover:hover {
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  main #hoverUno:hover {
+    background-image: url(none);
+    cursor: pointer;
+  }
+  main .hoverDos:hover {
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  main #hoverDos:hover {
+    background-image: url(none);
+    cursor: pointer;
+  }
+}
+@media (max-width: 1024px) {
+  main .clientes {
+    padding: 0;
+    padding-top: 80px;
+  }
+  main .clientes .imgClientes {
+    padding: 0;
+    padding-top: 30px;
+  }
+  main .clientes .imgClientes .fila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  main .clientes .imgClientes .fila li img {
+    width: 250px;
+    height: cover;
+    padding: 0;
+  }
+}
+@media (max-width: 1024px) {
+  main .contacto .cuerpoFormulario {
+    width: 98%;
+  }
+  main .contacto .cuerpoFormulario div {
+    margin-left: 10px;
+  }
+  main .contacto .cuerpoFormulario div h2 {
+    padding: 0;
+    line-height: 43px;
+  }
+  main .contacto .cuerpoFormulario div p {
+    padding: 0;
+  }
+  main .contacto .cuerpoFormulario form {
+    padding: 0;
+    margin-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

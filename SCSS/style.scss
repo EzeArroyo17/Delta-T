@@ -7,10 +7,34 @@
 @import "Components/header";
 @import "Components/footer";
 
+@import "Components/Responsive/header";
+@import "Components/Responsive/footer";
 
-@import "Pages/diferenciales";
+@import "Components/ResponsiveTablet/headerResp";
+
+
+
+
+
+
+@import "Pages/Responsive/card-Resp";
+@import "Pages/Responsive/diferenciales-Resp";
+@import "Pages/Responsive/conocenos-Resp";
+@import "Pages/Responsive/clientes-Resp";
+@import "Pages/Responsive/servicios-Resp";
+@import "Pages/Responsive/formulario-Resp";
+
 @import "Pages/cards";
-@import "Pages/clientes";
+@import "Pages/diferenciales";
 @import "Pages/conocenos";
 @import "Pages/servicios";
-@import "Pages/formulario"
+@import "Pages/clientes";
+@import "Pages/formulario";
+
+
+@import "Pages/ResponsiveTablet/cardsResp";
+@import "Pages/ResponsiveTablet/diferencialesResp";
+@import "Pages/ResponsiveTablet/conocenosResp";
+@import "Pages//ResponsiveTablet/serviciosResp";
+@import "Pages/ResponsiveTablet/clientesResp";
+@import "Pages/ResponsiveTablet/formularioResp";

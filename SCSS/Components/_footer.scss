@@ -6,11 +6,10 @@ footer {
     img {
         width: 120px;
         height: 100px;
-
     }
 
     div {
-
+        
         ul {
             @include flex(row, center, center);
 

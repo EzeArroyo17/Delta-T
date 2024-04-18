@@ -1,0 +1,30 @@
+@media (max-width:1024px) {
+    main {
+        .clientes {
+            padding: 0;
+            padding-top: 80px;
+            .textoClientesUno{
+                .textoClientes {}
+            }
+
+            .imgClientes {
+                padding: 0;
+                padding-top: 30px;
+                .fila {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    li {
+                        img {
+                            width: 250px;
+                            height: cover;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

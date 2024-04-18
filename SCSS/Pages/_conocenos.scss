@@ -1,44 +1,35 @@
 .conocenos {
-    @include gridArea(auto auto, auto, "texto texto imagen", center, center);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: " texto texto texto imagen ";
     padding-top: 100px;
     padding-bottom: 100px;
-
+    justify-content: center;
+    align-items: center;
     .textoConocenos {
         grid-area: texto;
-        width: 60%;
-
+        margin-left: 20px;
         .texto {
             @include flex(column, center, center);
-            text-align: left;
 
             h2 {
                 font-weight: 300;
                 font-size: 20px;
-                line-height: 18, 4px;
-                letter-spacing: 7%;
-                text-align: center;
                 color: nth($list: $colores , $n: 3);
             }
 
             h3 {
                 font-size: 50px;
                 font-weight: 700;
-                line-height: 46px;
-                text-align: center;
                 color: nth($list: $colores , $n: 3);
-                display: inline;
+                text-align: left;
             }
 
             p {
-                top: 1629px;
-                left: 84px;
                 font-size: 20px;
-                font-weight: 400;
+                font-weight: 350;
                 line-height: 23px;
-                text-align: left;
                 color: nth($list: $colores , $n: 1);
             }
         }
@@ -49,29 +40,44 @@
         flex-direction: row;
         gap: 20px;
         grid-area: imagen;
-
+        margin-right: 20px;
         .imagenesConocenos {
+            padding-top: 40px;
             ul {
                 li {
                     list-style-type: none;
                     margin-bottom: 10px;
+
                     img {
                         width: 300px;
                         height: 248px;
-                        border-radius: 25px;
+                        border-radius: 25px 25px 50px 50px;
                         top: 1784px;
                         left: 734px;
                         padding-bottom: 20px;
                         margin-bottom: 10px;
+                        transition: transform 0.3s ease-in-out;
                     }
                 }
+            }
+        }
+
+        .parteDosImagen {
+            padding-top: 40px;
+            img {
+                width: 308px;
+                height: 484px;
+                border-radius: 25px;
+                transition: transform 0.3s ease-in-out;
             }
         }
     }
 }
 
-#imagen {
-    width: 308px;
-    height: 484px;
-    border-radius: 25px;
+.imagen:hover {
+    transform: scale(1.6);
+}
+
+.imagenHover:hover {
+    transform: scale(1.6);
 }

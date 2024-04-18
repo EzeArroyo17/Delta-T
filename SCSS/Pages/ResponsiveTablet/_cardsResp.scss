@@ -1,0 +1,20 @@
+@media (max-width:1024px) {
+    main {
+        .cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 100px;
+            gap: 50px;
+            div {
+                div {
+                    .cardImagen {
+                    }
+                    h2 {}
+                    p {}
+                }
+            }
+        }
+    }
+}

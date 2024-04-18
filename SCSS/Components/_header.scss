@@ -1,131 +1,122 @@
-header {
-    .header {
-        @include flex(row, space-between, center);
-        background-color: nth($list: $colores , $n: 4);
-        height: 91px;
-        padding-left: 50px;
 
-        div {
-            img {
-                width: 150px;
-                height: 80px;
-                top: 24px;
-                left: 81px;
-                display: block
-            }
-        }
+    header {
+        background-color: nth($list: $colores , $n: 4);
 
         nav {
-
-            ul {
-                @include flex(row, center, center);
-
-                li {
-                    list-style: none;
-                    padding-right: 100px;
-
-                    a {
-                        text-decoration: none;
-                        width: 127px;
-                        height: 18px;
-                        font-weight: 600;
-                        font-size: 18px;
-                        line-height: 18px;
-                        color: nth($list: $colores , $n: 2);
-                        display: inline;
+            div {
+                a {
+                    padding-left: 150px;
+                    img {
+                        width: 94px;
+                        height: 77px;
                     }
                 }
 
+                button {
+                    .menu-ham {
+                        background-image: url(/Archivos/Iconos-card-uno/menu-hamburguesa.png);
+                        box-shadow: none;
+                        border: 0;
+                    }
+                }
 
+                .menu {
+                    flex-grow: 0;
+
+                    ul {
+                        .nav-item {
+                            padding-right: 50px;
+
+                            a {
+                                color: nth($list: $colores, $n: 2);
+                                font-size: 20px;
+                                font-weight: 700;
+                                line-height: 18px;
+                                letter-spacing: 0.08em;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
             }
         }
-    }
 
 
-
-    .imagen-central {
-        @include flex(column, space-between, center);
-        color: nth($list: $colores , $n: 2);
-        position: relative;
-
-        img {
+        .imagenCentral {
+            @include flex(column, space-between, center);
+            color: nth($list: $colores , $n: 2);
+            position: relative;
+            background-image: url(/Archivos/Logo-Imagen-central/imagen-header.jpg);
             background-size: cover;
             background-position: center;
             height: 875px;
-            width: 2380px;
-            top: -500px;
-        }
 
-        div {
-            position: absolute;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            @include flex(column, center, center);
-            text-align: center;
+            div {
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                @include flex(column, center, center);
+                text-align: center;
 
-            h1 {}
+                h1 {}
 
-            h2 {}
+                h2 {}
 
-            .subrayado {
-                width: 886px;
-                height: 120px;
-                font-weight: 900;
-                font-size: 65px;
-                line-height: 59, 8px;
-                position: relative;
+                .subrayado {
+                    width: 886px;
+                    height: 120px;
+                    font-weight: 900;
+                    font-size: 65px;
+                    line-height: 59, 8px;
+                    position: relative;
 
-                span::before {
-                    content: "";
-                    /* Necesario para que los pseudo-elementos tengan contenido */
-                    position: absolute;
-                    top: 120px;
-                    left: 10px;
-                    width: 98%;
-                    /* Ajusta el ancho al del contenedor */
-                    height: 38px;
-                    /* Ajusta la altura al del contenedor */
-                    background-color: nth($list: $colores , $n: 3);
-                    /* Color del rectángulo */
-                    z-index: -1;
-                    /* Coloca el rectángulo detrás del texto */
+                    span::before {
+                        content: "";
+                        position: absolute;
+                        top: 120px;
+                        left: 10px;
+                        width: 98%;
+                        height: 38px;
+                        background-color: nth($list: $colores , $n: 3);
+                        z-index: -1;
+
+                    }
+                }
+
+                p {
+                    padding-top: 50px;
+                    width: 813px;
+                    height: 70px;
+                    font-weight: 400;
+                    top: 0px;
+                    left: 50px;
+                    font-size: 35px;
+                    line-height: 35px;
                 }
             }
 
-            p {
-                padding-top: 50px;
-                width: 813px;
-                height: 70px;
-                font-weight: 400;
-                top: 0px;
-                left: 50px;
-                font-size: 35px;
-                line-height: 35px;
+            .deltaArriba {
+                color: #FFFFFF0D;
+                top: 100px;
+                left: 90px;
+                font-size: 128px;
+                font-weight: 900;
+                line-height: 117.76px;
+                display: inline;
+                position: absolute;
+            }
+
+            .deltaAbajo {
+                color: #FFFFFF2D;
+                ;
+                bottom: 0px;
+                right: 20px;
+                font-size: 128px;
+                font-weight: 900;
+                line-height: 117.76px;
+                position: absolute;
+
             }
         }
-
-        .deltaArriba {
-            color: #FFFFFF0D;
-            top: 100px;
-            left: 90px;
-            font-size: 128px;
-            font-weight: 900;
-            line-height: 117.76px;
-            display: inline;
-            position: absolute;
-        }
-
-        .deltaAbajo {
-            color:#FFFFFF2D;;
-            bottom: 0px;
-            right:20px;
-            font-size: 128px;
-            font-weight: 900;
-            line-height: 117.76px;
-            position: absolute;
-            
-        }
     }
-
-}

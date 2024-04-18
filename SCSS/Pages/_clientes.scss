@@ -17,11 +17,11 @@
 
 
     .imgClientes {
-        @include flex(column, center, center);
+        @include flex(column, center, normal);
+
         padding-top: 80px;
         .fila {
             display: flex;
-
             li {
                 list-style: none;
                 padding-left: 20px;

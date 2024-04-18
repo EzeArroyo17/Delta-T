@@ -1,17 +1,16 @@
 .contacto {
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+
     .cuerpoFormulario {
         background-color: nth($list: $colores , $n: 1);
-        width:60%;
+        width: 1280px;
         height: 529px;
         border-radius: 55px;
-        opacity: 0px;
         @include flex(row, center, center);
-
         div {
             @include flex(column, center, center);
             color: nth($list: $colores , $n: 2);
@@ -19,9 +18,6 @@
             h2 {
                 font-size: 50px;
                 font-weight: 700;
-                line-height: 46px;
-                padding-right: 110px;
-
             }
 
             p {
@@ -29,12 +25,13 @@
                 font-weight: 400;
                 line-height: 23px;
                 text-align: left;
-                padding-left: 50px;
+                padding-left: 35px;
             }
         }
 
         form {
             padding-right: 50px;
+
             .primeraFormulario {
                 display: flex;
                 flex-direction: row;

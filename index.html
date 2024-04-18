@@ -18,33 +18,40 @@
 
 <body>
     <header>
-        <div class="header">
-            <div class="logo">
-                <img src="./Archivos/Logo-Imagen-central/Logo_DELTA_T.png" alt="Logo de la empresa">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./Archivos/Logo-Imagen-central/Logo delta sin fondo.png" alt="parte trasera auto"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon menu-ham"></span>
+                </button>
+                <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#conocenos">CONOCENOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">NUESTROS SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clientes">ALGUNOS CLIENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#conocenos">CONOCENOS</a>
-                    </li>
-                    <li>
-                        <a href="#servicios">NUESTROS SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="#clientes">ALGUNOS CLIENTES</a>
-                    </li>
-                    <li>
-                        <a href="#contacto">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="imagen-central">
-            <img src="./Archivos/Logo-Imagen-central/imagen-header.jpg" alt="">
+        </nav>
+
+        <div class="imagenCentral">
             <div>
                 <h1>Tecnico en refrigeracion</h1>
                 <h2>Tecnico en calefaccion</h2>
-                <h2 class="subrayado">OPTIMIZANDO CLIMAS <span>POTENCIANDO NEGOCIOS</span></h2>
+                <h2 class="subrayado"> <span>OPTIMIZANDO CLIMAS</span><span class="subrayadoDos">POTENCIANDO
+                        NEGOCIOS</span></h2>
                 <p>Somos Delta-T, expertos en soluciones de aire
                     acondicionado y calefacción para tu empresa.</p>
             </div>
@@ -57,36 +64,40 @@
     <main>
         <!-- Cards -->
         <section class="cards">
+            
+            <div class="cardTotal">
 
-            <div class="trayectoria">
-                <div>
-                    <img class="cardImagen" src="./Archivos/Iconos-card-uno/Group 10.png" alt="">
-                    <h2>+20 de años de trayectoria</h2>
-                    <p>en el campo de la climatización y
-                        refrigeración, brindando servicios de calidad y
-                        soluciones confiables.</p>
+                <div class="trayectoria">
+                    <div>
+                        <img class="cardImagen" src="./Archivos/Iconos-card-uno/Group 10.png" alt="">
+                        <h2>+20 de años de trayectoria</h2>
+                        <p>En el campo de la climatización y
+                            refrigeración, brindando servicios de calidad y
+                            soluciones confiables.</p>
+                    </div>
+                </div>
+
+                <div class="personal">
+                    <div>
+                        <img class="cardImagen" src="./Archivos/Iconos-card-uno/Group 11.png" alt="">
+                        <h2>Nuestro personal</h2>
+                        <p>Técnicos altamente calificados, con amplia
+                            experiencia, y matriculados por la Cámara
+                            Argentina de Refrigeración y Aire Acondicionado.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="compromiso">
+                    <div>
+                        <img class="cardImagen" src="./Archivos/Iconos-card-uno/Group 13.png" alt="">
+                        <h2>Compromiso ambiental</h2>
+                        <p>Trabajamos respetando las reglamentaciones
+                            vigentes en el cuidado del medio ambiente.</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="personal">
-                <div>
-                    <img class="cardImagen" src="./Archivos/Iconos-card-uno/Group 11.png" alt="">
-                    <h2>Nuestro personal</h2>
-                    <p>Técnicos altamente calificados, con amplia
-                        experiencia, y matriculados por la Cámara
-                        Argentina de Refrigeración y Aire Acondicionado.
-                    </p>
-                </div>
-            </div>
-
-            <div class="compromiso">
-                <div>
-                    <img class="cardImagen" src="./Archivos/Iconos-card-uno/Group 13.png" alt="">
-                    <h2>Compromiso ambiental</h2>
-                    <p>Trabajamos respetando las reglamentaciones
-                        vigentes en el cuidado del medio ambiente.</p>
-                </div>
-            </div>
 
         </section>
 
@@ -99,11 +110,10 @@
             <ul class="imgDiferenciales">
                 <li><img src="./Archivos/logos-empresas/Logo-parte-uno/Isologo-COPIME-fondo-transparente-pluma-vertical_2_ilustration.png"
                         alt=""></li>
-                <li><img src="./Archivos/logos-empresas/Logo-parte-uno/Frimaser-logo.png" alt=""></li>
                 <li><img src="./Archivos/logos-empresas/Logo-parte-uno/camara-argentina.png" alt=""></li>
+                <li><img src="./Archivos/logos-empresas/Logo-parte-uno/Frimaser-logo.png" alt=""></li>
                 <li><img src="./Archivos/logos-empresas/Logo-parte-uno/logo-iaraa-horizontal-2023.png" alt=""></li>
-
-                </div>
+            </ul>
         </section>
 
         <section class="conocenos" id="conocenos">
@@ -130,21 +140,23 @@
                         inquebrantable con la excelencia en todo lo que hacemos.</p>
                     </p>
                 </div>
-
-                <div>
-                    <div class="imagenesConocenos">
-                        <ul>
-                            <li><img src="./Archivos/imagenes-card-final/imagens-conocenos/trabajadoresTrabajando.jpg.jpg"
-                                    alt=""></li>
-                            <li><img src="./Archivos/imagenes-card-final/imagens-conocenos/IMAGEN CARRIER.jpeg" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="parteDosImagen">
-                        <img id="imagen" src="./Archivos/imagenes-card-final/imagens-conocenos/TRABAJADORES.jpg.jpg"
-                            alt="">
-                    </div>
+            </div>
+            <div>
+                <div class="imagenesConocenos">
+                    <ul>
+                        <li><img class="imagenHover"
+                                src="./Archivos/imagenes-card-final/imagens-conocenos/trabajadoresTrabajando.jpg.jpg"
+                                alt=""></li>
+                        <li><img class="imagenHover"
+                                src="./Archivos/imagenes-card-final/imagens-conocenos/IMAGEN CARRIER.jpeg" alt="">
+                        </li>
+                    </ul>
                 </div>
+                <div class="parteDosImagen">
+                    <img class="imagen" src="./Archivos/imagenes-card-final/imagens-conocenos/TRABAJADORES.jpg.jpg"
+                        alt="">
+                </div>
+            </div>
 
         </section>
 
@@ -157,36 +169,36 @@
 
                 <div class="ofrecimientosUno">
 
-                    <div class="cardFinal">
-                        <div class="aires bg-light" class="card" style="width: 25.8rem;">
+                    <div id="hoverUno" class="cardFinal ">
+                        <div class="hover">
                             <img src="./Archivos/imagenes-card-final/mejores-aires-acondicionados-relacion-calidad-precio-puedes-comprar_4.webp"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h3>AIRE ACONDICIONADO</h3>
-                                <p class="card-text">Mantenimiento preventivo, asesoramiento y venta de todas las marcas
-                                    y modelos.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cardFinal">
-                        <div class="venta bg-light" class="card" style="width: 25.8rem;">
-                            <img src="./Archivos/imagenes-card-final/aire-acondicionado-multisplit-bgh-inverter-unidades-exteriores.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h3>VENTA DE EQUIPOS - BGH</h3>
-                                <p class="card-text">Climatización profesional. Línea Light Commercial</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cardFinal">
-                        <div class="calefaccion bg-light" class="card" style="width: 25.8rem;">
-                            <img src="./Archivos/imagenes-card-final/CalderaCentral.jpg.webp" class="card-img-top"
                                 alt="...">
-                            <div class="card-body">
+                            <div>
+                                <h3>AIRE ACONDICIONADO</h3>
+                                <p>Mantenimiento preventivo, asesoramiento y
+                                    venta de todas las marcas y modelos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="cardFinal" id="hoverDos">
+                        <div class="hoverDos">
+                            <img src="./Archivos/imagenes-card-final/aire-acondicionado-multisplit-bgh-inverter-unidades-exteriores.jpg"
+                                alt="...">
+                            <div>
+                                <h3>VENTA DE EQUIPOS - BGH</h3>
+                                <p>Climatización profesional. Línea Light Commercial</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardFinal">
+                        <div class="calefaccion">
+                            <img src="./Archivos/imagenes-card-final/CalderaCentral.jpg.webp" alt="...">
+                            <div>
                                 <h3>CALEFACCIÓN CENTRAL A GAS</h3>
-                                <p class="card-text">Mantenimiento, venta y reparación.</p>
+                                <p>Mantenimiento, venta y reparación.</p>
                             </div>
                         </div>
                     </div>
@@ -196,34 +208,34 @@
                 <div class="ofrecimientosDos">
 
                     <div class="cardFinal">
-                        <div class="enfriamiento bg-light" class="card" style="width: 25.8rem;">
-                            <img src="./Archivos/imagenes-card-final/chiller.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                        <div class="enfriamiento">
+                            <img src="./Archivos/imagenes-card-final/chiller.jpg" alt="...">
+                            <div>
                                 <h3>ENFRIAMIENTO DE AGUA</h3>
-                                <p class="card-text">Sistema de torre de enfriamiento tipo Chiller. Mantenimiento
+                                <p>Sistema de torre de enfriamiento tipo Chiller. Mantenimiento
                                     preventivo y reparación..</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="cardFinal">
-                        <div class="camaras bg-light" class="card" style="width: 25.8rem;">
-                            <img src="./Archivos/imagenes-card-final/control-de-temperatura.jpg" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
+                        <div class="camaras">
+                            <img src="./Archivos/imagenes-card-final/control-de-temperatura.jpg" alt="...">
+                            <div>
                                 <h3>CÁMARAS FRIGORÍFICAS</h3>
-                                <p class="card-text">Venta, instalación y servicio de reparación</p>
+                                <p>Venta, instalación y servicio de reparación</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="cardFinal">
-                        <div class="cerificacion bg-light" class="card" style="width: 25.8rem;">
+                    <div class="certificacion">
+                        <div>
                             <img src="./Archivos/imagenes-card-final/primer-adulto-listo-firmar-documentos_23-2148377754.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h3>CERTIFICACIÓN DE INSTALACIONES ELECTRICAS D.C.I</h3>
-                                <p class="card-text">Certificamos que tu instalación cumpla con todos los requisitos y
+                                alt="...">
+                            <div>
+                                <h3>CERTIFICACIÓN DE
+                                    INSTALACIONES ELECTRICAS D.C.I</h3>
+                                <p>Certificamos que tu instalación cumpla con todos los requisitos y
                                     normativas.</p>
                             </div>
                         </div>
@@ -236,7 +248,7 @@
         </section>
 
         <section class="clientes" id="clientes">
-            <div>
+            <div class="textoClientesUno">
                 <h2 class="textoClientes">Algunos de nuestros clientes</h2>
             </div>
 
@@ -298,13 +310,13 @@
 
     <footer>
         <img src="./Archivos/Logo-Imagen-central/Logo delta sin fondo.png" alt="">
-        <div>
+        <div class="iconosFooter">
             <ul>
                 <li><img src="./Archivos/Iconos-card-uno/iconos-footer/icono-wspp.png" alt="">+54 911 11 6515-7701</li>
-                <li><img src="./Archivos/Iconos-card-uno/iconos-footer/icono-mail.png" alt="">teruetalejandro@gmail.com
-                </li>
-                <li><img src="./Archivos/Iconos-card-uno/iconos-footer/icono-ubicacion.png" alt="">Buenos Aires,
-                    Argentina</li>
+                <li class="iconoCentralFooter"><img src="./Archivos/Iconos-card-uno/iconos-footer/icono-mail.png"
+                        alt="">teruetalejandro@gmail.com</li>
+                <li><img src="./Archivos/Iconos-card-uno/iconos-footer/icono-ubicacion.png" alt="">Buenos
+                    Aires,Argentina</li>
             </ul>
         </div>
     </footer>
@@ -314,5 +326,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+
+<!--Link javascript-->
+<script src="./JS/style.js"></script>
 
 </html>
