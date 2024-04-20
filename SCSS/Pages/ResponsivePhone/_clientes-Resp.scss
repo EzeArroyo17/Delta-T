@@ -1,4 +1,4 @@
-@media (min-width:768px) and (max-width:990px) {
+@media (max-width:767px) {
     main {
         .clientes {
             @include flex(column, center, center);
@@ -7,7 +7,7 @@
             .textoClientesUno {
                 .textoClientes {
                     color: nth($list: $colores , $n: 3);
-                    font-size: 60px;
+                    font-size: 45px;
                     font-weight: 700;
                     line-height: 41.4px;
                     text-align: center;
@@ -26,15 +26,11 @@
                     flex-wrap: wrap;
                     justify-content: center;
                     align-items: center;
-                    gap: 70px;
+                    gap: 50px;
                     li {
                         list-style-type: none;
                         img {
-                            width: 220px;
-                            height: cover;
-                        }
-                        .imagenClientesChicas{
-                            width: 180px;
+                            width: 110px;
                             height: cover;
                         }
                     }

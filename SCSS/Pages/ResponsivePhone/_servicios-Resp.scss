@@ -1,4 +1,4 @@
-@media (min-width:768px) and (max-width:990px) {
+@media (max-width:767px) {
     main {
         font-family: "League Spartan";
 
@@ -6,11 +6,11 @@
             color: nth($list: $colores , $n: 2);
             @include flex(column, center, center);
             background: linear-gradient(to bottom right, nth($list: $colores , $n: 3) 50%, nth($list: $colores , $n: 1) 50%);
-            padding-top: 50px;
-            padding-bottom: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             h2 {
-                font-size: 20px;
-                font-weight: 400;
+                font-size: 15px;
+                font-weight: 300;
                 line-height: 13.8px;
                 letter-spacing: 0.07em;
                 text-align: center;
@@ -19,9 +19,9 @@
             }
 
             h3 {
-                font-size: 65px;
+                font-size: 40px;
                 font-weight: 700;
-                line-height: 65px;
+                line-height: 41.4px;
                 text-align: center;
 
             }
@@ -30,18 +30,18 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 30px;
+                gap: 20px;
 
                 .cardFinal {
-                    width: 320px;
-                    height: 340px;
+                    width: 302px;
+                    height: 335px;
                     border-radius: 18px;
                     background-color: nth($list: $colores , $n: 2);
 
                     div {
                         .imagenCard {
                             img {
-                                width: 320px;
+                                width: 302px;
                                 height: 150px;
                                 border-radius: 18px 18px 0px 0px;
                                 object-fit:cover;
@@ -55,7 +55,7 @@
                             margin: 10px;
                             h3 {
                                 width: 95%;
-                                font-size: 26px;
+                                font-size: 24px;
                                 font-weight: 800;
                                 line-height: 27.6px;
                                 text-align: left;
@@ -64,7 +64,7 @@
                             p {
                                 width: 95%;
                                 height: 100%;
-                                font-size: 23px;
+                                font-size: 21px;
                                 font-weight: 400;
                                 line-height: 24.15px;
                                 text-align: left;

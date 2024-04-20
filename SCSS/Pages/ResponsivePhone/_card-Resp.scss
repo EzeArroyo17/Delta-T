@@ -1,4 +1,4 @@
-@media (min-width:768px) and (max-width:990px) {
+@media (max-width:767px) {
     main {
         font-family: "League Spartan";
         .cards {
@@ -10,41 +10,42 @@
                 justify-content: center;
                 align-items: center;
                 gap: 20px;
+
                 div {
-                    width: 450px;
-                    height: 350px;
+                    width: 350px;
+                    height: 280px;
                     border-radius: 18px;
                     opacity: 0px;
                     background-color: nth($list: $colores , $n: 1);
                     color: nth($list: $colores , $n: 2);
                     position: relative;
                     .cardImagen {
-                        width: 80px;
-                        height: 80px;
-                        left: 30px;
-                        top: 25px;
+                        width: 72px;
+                        height: 72px;
+                        left: 20px;
+                        top: 15px;
                         position: absolute;
                     }
 
                     h2 {
                         width: 100%;
                         margin-left: 5px;
-                        padding-top: 130px;
-                        font-size: 33px;
+                        padding-top: 100px;
+                        font-size: 24px;
                         font-weight: 700;
                         line-height: 27.6px;
                         text-align: left;
-                        margin-left: 20px;
+                        margin-left: 10px;
                     }
 
                     p {
-                        width: 90%;
+                        width: 95%;
                         height: 95%;
-                        font-size: 30px;
+                        font-size: 22px;
                         font-weight: 400;
-                        line-height: 35px;
+                        line-height: 27.6px;
                         text-align: left;
-                        margin-left: 20px;
+                        margin-left: 10px;
                     }
                 }
             }

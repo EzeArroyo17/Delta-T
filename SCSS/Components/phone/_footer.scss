@@ -1,11 +1,17 @@
-@media (max-width:768px) {
+@media (max-width:767px) {
     footer {
-        height: 430px;
-
-        img {}
+        padding-top: 15px;
+        @include flex(column, center, center);
+        background-color: nth($list: $colores , $n:4);
+        height: 100%;
+        color: nth($list:$colores , $n:2 );
+        .imagenLogo {
+            width: 90px;
+            height: 75px;
+        }
 
         .iconosFooter {
-
+            
             ul {
                 display: flex;
                 flex-direction: column;
@@ -20,7 +26,9 @@
                     list-style-type: none;
                     padding-top: 20px;
                     img {
-                        padding-right: 15px;
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 8px;
                     }
                 }
             }

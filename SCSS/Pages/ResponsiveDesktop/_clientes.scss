@@ -1,4 +1,4 @@
-@media (min-width:768px) and (max-width:990px) {
+@media (min-width:991px) {
     main {
         .clientes {
             @include flex(column, center, center);
@@ -7,8 +7,8 @@
             .textoClientesUno {
                 .textoClientes {
                     color: nth($list: $colores , $n: 3);
-                    font-size: 60px;
-                    font-weight: 700;
+                    font-size: 70px;
+                    font-weight: 800;
                     line-height: 41.4px;
                     text-align: center;
                     width: 100%;
@@ -30,11 +30,11 @@
                     li {
                         list-style-type: none;
                         img {
-                            width: 220px;
+                            width: 250px;
                             height: cover;
                         }
                         .imagenClientesChicas{
-                            width: 180px;
+                            width: 230px;
                             height: cover;
                         }
                     }

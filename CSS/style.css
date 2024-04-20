@@ -8,216 +8,110 @@ html {
   font-family: "League Spartan";
 }
 
-header {
-  background-color: #26163F;
-}
-header nav div a {
-  padding-left: 150px;
-}
-header nav div a img {
-  width: 94px;
-  height: 77px;
-}
-header nav div button .menu-ham {
-  background-image: url(/Archivos/Iconos-card-uno/menu-hamburguesa.png);
-  box-shadow: none;
-  border: 0;
-}
-header nav div .menu {
-  flex-grow: 0;
-}
-header nav div .menu ul .nav-item {
-  padding-right: 50px;
-}
-header nav div .menu ul .nav-item a {
-  color: #ECF8F9;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 18px;
-  letter-spacing: 0.08em;
-  text-align: center;
-}
-header .imagenCentral {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  color: #ECF8F9;
-  position: relative;
-  background-image: url(/Archivos/Logo-Imagen-central/imagen-header.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 875px;
-}
-header .imagenCentral div {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-header .imagenCentral div .subrayado {
-  width: 886px;
-  height: 120px;
-  font-weight: 900;
-  font-size: 65px;
-  line-height: 59, 8px;
-  position: relative;
-}
-header .imagenCentral div .subrayado span::before {
-  content: "";
-  position: absolute;
-  top: 120px;
-  left: 10px;
-  width: 98%;
-  height: 38px;
-  background-color: #E55807;
-  z-index: -1;
-}
-header .imagenCentral div p {
-  padding-top: 50px;
-  width: 813px;
-  height: 70px;
-  font-weight: 400;
-  top: 0px;
-  left: 50px;
-  font-size: 35px;
-  line-height: 35px;
-}
-header .imagenCentral .deltaArriba {
-  color: rgba(255, 255, 255, 0.0509803922);
-  top: 100px;
-  left: 90px;
-  font-size: 128px;
-  font-weight: 900;
-  line-height: 117.76px;
-  display: inline;
-  position: absolute;
-}
-header .imagenCentral .deltaAbajo {
-  color: rgba(255, 255, 255, 0.1764705882);
-  bottom: 0px;
-  right: 20px;
-  font-size: 128px;
-  font-weight: 900;
-  line-height: 117.76px;
-  position: absolute;
-}
-
-footer {
-  background-color: #26163F;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-footer img {
-  width: 120px;
-  height: 100px;
-}
-footer div ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-footer div ul li {
-  color: #ECF8F9;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 18.4px;
-  text-align: left;
-  list-style-type: none;
-  padding-right: 30px;
-  padding-top: 20px;
-}
-footer div ul li img {
-  width: 75px;
-  height: 70px;
-  padding-right: 15px;
-}
-
-@media (max-width: 768px) {
-  header nav {
-    position: relative;
+@media (max-width: 767px) {
+  header {
+    background-color: #26163F;
+    height: auto;
+  }
+  header nav div a {
+    padding: 30px;
+  }
+  header nav div a img {
+    width: 60px;
+    height: 45px;
+  }
+  header nav div button .menu-ham {
+    background-image: url(/Archivos/Iconos-card-uno/menu-hamburguesa.png);
+  }
+  header nav div .menu {
+    padding-top: 10px;
+  }
+  header nav div .menu ul {
+    gap: 10px;
+  }
+  header nav div .menu ul .nav-item {
+    list-style-type: none;
   }
   header nav div .menu ul .nav-item a {
+    padding: 0;
+    font-size: 15px;
+    font-weight: 650;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+    color: #ECF8F9;
     text-align: left;
   }
   header .imagenCentral {
-    position: relative;
+    padding: 0;
+    background-image: url(/Archivos/Logo-Imagen-central/imagen-header.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ECF8F9;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  header .imagenCentral div h1 {
-    position: absolute;
-    text-align: left;
-    top: 150px;
-    left: 20px;
+  header .imagenCentral .primeraParte {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
-  header .imagenCentral div h2 {
-    position: absolute;
-    text-align: left;
-    top: 200px;
-    left: 20px;
+  header .imagenCentral .primeraParte h1 {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
   }
-  header .imagenCentral div .subrayado {
-    width: 500px;
-    height: 128px;
-    font-size: 60px;
+  header .imagenCentral .primeraParte h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  header .imagenCentral .segundaParte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  header .imagenCentral .segundaParte .subrayado {
+    font-size: 30px;
     font-weight: 900;
-    line-height: 50.5px;
-    text-align: left;
-    top: 250px;
-    left: 20px;
-    position: absolute;
+    line-height: 35px;
+    text-align: center;
+    padding: 0;
+    width: 70%;
   }
-  header .imagenCentral div .subrayado span::before {
-    content: "";
-    position: absolute;
-    top: 130px;
-    left: 0px;
-    width: 91%;
-    height: 28px;
-    background-color: #E55807;
-    z-index: -1;
+  header .imagenCentral .segundaParte .subrayado span {
+    text-decoration: underline #E55807 10px;
   }
-  header .imagenCentral div .subrayado span.subrayadoDos::before {
-    content: "";
-    position: absolute;
-    top: 183px;
-    left: 0px;
-    width: 63%;
-    height: 28px;
-    background-color: #E55807;
-    z-index: -1;
-  }
-  header .imagenCentral div p {
-    width: 500px;
-    height: 100px;
-    top: 440px;
-    left: 20px;
-    position: absolute;
-    display: inline;
-    text-align: left;
+  header .imagenCentral .segundaParte p {
+    padding: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
   }
   header .imagenCentral .deltaArriba {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: none;
   }
   header .imagenCentral .deltaAbajo {
-    position: absolute;
-    top: 750px;
-    left: 200;
+    display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer {
-    height: 430px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #26163F;
+    height: 100%;
+    color: #ECF8F9;
+  }
+  footer .imagenLogo {
+    width: 90px;
+    height: 75px;
   }
   footer .iconosFooter ul {
     display: flex;
@@ -234,33 +128,353 @@ footer div ul li img {
     padding-top: 20px;
   }
   footer .iconosFooter ul li img {
-    padding-right: 15px;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
   }
 }
-@media (max-width: 1024px) {
-  header nav div a {
-    padding: 0;
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    background-color: #26163F;
+    height: auto;
+    font-family: "League Spartan";
   }
-  header nav div .menu ul .nav-item {
-    padding: 0;
+  header nav div a {
+    padding: 50px;
+  }
+  header nav div a img {
+    width: 70px;
+    height: 60px;
+  }
+  header nav div button .menu-ham {
+    background-image: url(/Archivos/Iconos-card-uno/menu-hamburguesa.png);
+  }
+  header nav div .menu {
+    padding-top: 25px;
+    flex-grow: 0;
+  }
+  header nav div .menu ul {
+    gap: 20px;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
   }
-}
-@media (max-width: 768px) {
-  main .cards {
+  header nav div .menu ul .nav-item {
+    list-style-type: none;
+  }
+  header nav div .menu ul .nav-item a {
+    padding: 0;
+    font-size: 23px;
+    font-weight: 650;
+    line-height: 25px;
+    letter-spacing: 0.08em;
+    color: #ECF8F9;
+    text-align: left;
+  }
+  header .imagenCentral {
+    padding: 0;
+    background-image: url(/Archivos/Logo-Imagen-central/imagen-header.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ECF8F9;
+    padding-left: 20px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    gap: 20px;
+  }
+  header .imagenCentral .primeraParte {
+    display: flex;
+    flex-direction: column;
+  }
+  header .imagenCentral .primeraParte h1 {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  header .imagenCentral .primeraParte h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+  }
+  header .imagenCentral .segundaParte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  header .imagenCentral .segundaParte .subrayado {
+    font-size: 65px;
+    font-weight: 900;
+    line-height: 60px;
+    text-align: center;
+    width: 80%;
+    padding: 0;
+  }
+  header .imagenCentral .segundaParte .subrayado span {
+    text-decoration: underline #E55807 15px;
+  }
+  header .imagenCentral .segundaParte p {
+    padding: 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    width: 80%;
+  }
+  header .imagenCentral .deltaArriba {
+    display: none;
+  }
+  header .imagenCentral .deltaAbajo {
+    display: none;
   }
 }
-@media (max-width: 768px) {
-  main .diferenciales {
+@media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: #26163F;
+    height: 100%;
+    color: #ECF8F9;
+    padding-bottom: 10px;
+  }
+  footer .imagenLogo {
+    width: 140px;
+    height: 115px;
+  }
+  footer .iconosFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .iconosFooter ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: normal;
     padding: 0;
-    padding-top: 80px;
+  }
+  footer .iconosFooter ul li {
+    padding: 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 18.4px;
+    list-style-type: none;
+    padding-top: 20px;
+  }
+  footer .iconosFooter ul li img {
+    width: 65px;
+    height: 65px;
+    margin-right: 8px;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    background-color: #26163F;
+    height: auto;
+    font-family: "League Spartan";
+  }
+  header nav div a {
+    padding: 40px;
+  }
+  header nav div a img {
+    width: 93px;
+    height: 77px;
+  }
+  header nav div button .menu-ham {
+    background-image: url(/Archivos/Iconos-card-uno/menu-hamburguesa.png);
+  }
+  header nav div .menu {
+    flex-grow: 0;
+  }
+  header nav div .menu ul {
+    gap: 30px;
+  }
+  header nav div .menu ul .nav-item {
+    list-style-type: none;
+    gap: 20px;
+  }
+  header nav div .menu ul .nav-item a {
+    padding: 0;
+    font-size: 20px;
+    font-weight: 650;
+    color: #ECF8F9;
+    display: inline;
+  }
+  header .imagenCentral {
+    padding: 0;
+    background-image: url(/Archivos/Logo-Imagen-central/imagen-header.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ECF8F9;
+    padding-left: 20px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  header .imagenCentral .primeraParte {
+    display: flex;
+    flex-direction: column;
+  }
+  header .imagenCentral .primeraParte h1 {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+  }
+  header .imagenCentral .primeraParte h2 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400;
+  }
+  header .imagenCentral .segundaParte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  header .imagenCentral .segundaParte .subrayado {
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 70px;
+    text-align: center;
+    width: 80%;
+    padding: 0;
+  }
+  header .imagenCentral .segundaParte .subrayado span {
+    text-decoration: underline #E55807 15px;
+  }
+  header .imagenCentral .segundaParte p {
+    padding: 0;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    width: 80%;
+  }
+  header .imagenCentral .deltaArriba {
+    display: none;
+  }
+  header .imagenCentral .deltaAbajo {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #26163F;
+    color: #ECF8F9;
+    padding-bottom: 10px;
+  }
+  footer .imagenLogo {
+    width: 140px;
+    height: 115px;
+  }
+  footer .iconosFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .iconosFooter ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .iconosFooter ul li {
+    padding: 0;
+    font-size: 21.5px;
+    font-weight: 400;
+    line-height: 18.4px;
+    list-style-type: none;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  footer .iconosFooter ul li img {
+    width: 65px;
+    height: 65px;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 767px) {
+  main {
+    font-family: "League Spartan";
+  }
+  main .cards {
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+  main .cards .cardTotal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  main .cards .cardTotal div {
+    width: 350px;
+    height: 280px;
+    border-radius: 18px;
+    opacity: 0px;
+    background-color: #0766AD;
+    color: #ECF8F9;
+    position: relative;
+  }
+  main .cards .cardTotal div .cardImagen {
+    width: 72px;
+    height: 72px;
+    left: 20px;
+    top: 15px;
+    position: absolute;
+  }
+  main .cards .cardTotal div h2 {
+    width: 100%;
+    margin-left: 5px;
+    padding-top: 100px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27.6px;
+    text-align: left;
+    margin-left: 10px;
+  }
+  main .cards .cardTotal div p {
+    width: 95%;
+    height: 95%;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 767px) {
+  main .diferenciales {
+    color: #E55807;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .diferenciales div h3 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 41.4px;
+    text-align: center;
+    width: 100%;
   }
   main .diferenciales .imgDiferenciales {
     padding: 0;
@@ -269,52 +483,64 @@ footer div ul li img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     padding-top: 20px;
+    gap: 20px;
   }
   main .diferenciales .imgDiferenciales li {
-    padding: 0;
     padding-top: 35px;
+    list-style-type: none;
   }
   main .diferenciales .imgDiferenciales li img {
-    width: 300px;
+    width: 160px;
     height: auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main .conocenos {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: rgb(147, 188, 219);
+    height: 100%;
+  }
+  main .conocenos .textoConocenos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    flex-wrap: wrap;
+  }
+  main .conocenos .textoConocenos .texto {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   main .conocenos .textoConocenos .texto h2 {
+    color: #E55807;
     font-weight: 300;
     font-size: 20px;
     line-height: 18, 4px;
     letter-spacing: 7%;
-    text-align: center;
-    color: #E55807;
-    display: inline;
+    text-align: left;
   }
   main .conocenos .textoConocenos .texto h3 {
     font-size: 50px;
     font-weight: 700;
     line-height: 46px;
-    text-align: center;
     color: #E55807;
-    display: inline;
   }
   main .conocenos .textoConocenos .texto p {
-    width: 75%;
+    width: 90%;
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
     text-align: left;
     color: #0766AD;
+  }
+  main .conocenos .textoConocenos .texto span {
+    font-weight: 700;
+    font-size: 20px;
   }
   main .conocenos div {
     display: flex;
@@ -325,48 +551,32 @@ footer div ul li img {
   main .conocenos div .imagenesConocenos ul {
     padding: 0;
   }
+  main .conocenos div .imagenesConocenos ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 20px;
+  }
   main .conocenos div .imagenesConocenos ul li img {
-    border-radius: 25px 25px 50px 50px;
-    width: 500px;
-    height: 350px;
+    width: 80%;
+    height: 40%;
+    border-radius: 25px;
   }
   main .conocenos div .parteDosImagen {
-    padding: 0;
-  }
-  main .conocenos div .parteDosImagen img {
-    padding: 0;
-    width: 500px;
-    height: 600px;
-  }
-  main .conocenos .imagenHover:hover {
-    transform: none;
-  }
-  main .conocenos .imagen:hover {
-    transform: none;
-  }
-}
-@media (max-width: 768px) {
-  main .clientes {
-    padding: 0;
-    padding-top: 80px;
-  }
-  main .clientes .imgClientes {
-    padding: 0;
-    padding-top: 30px;
-  }
-  main .clientes .imgClientes .fila {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  main .clientes .imgClientes .fila li img {
-    padding: 15px;
-    width: 200px;
-    height: cover;
+  main .conocenos div .parteDosImagen .imagen {
+    width: 80%;
+    height: 95%;
+    border-radius: 25px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main {
     font-family: "League Spartan";
   }
@@ -377,599 +587,258 @@ footer div ul li img {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom right, #E55807 50%, #0766AD 50%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  main .servicios h2 {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 13.8px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    padding-bottom: 5px;
   }
   main .servicios h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 41.4px;
     text-align: center;
   }
-  main .servicios .cardsOfrecimientos .ofrecimientosUno {
+  main .servicios .cardsOfrecimientos {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
   }
-  main .servicios .cardsOfrecimientos .ofrecimientosDos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
+  main .servicios .cardsOfrecimientos .cardFinal {
+    width: 302px;
+    height: 335px;
+    border-radius: 18px;
+    background-color: #ECF8F9;
   }
-  main .hover:hover {
-    opacity: 1;
-    transition: transform 0.3s, opacity 0.3s;
+  main .servicios .cardsOfrecimientos .cardFinal div .imagenCard img {
+    width: 302px;
+    height: 150px;
+    border-radius: 18px 18px 0px 0px;
+    object-fit: cover;
   }
-  main #hoverUno:hover {
-    background-image: url(none);
-    cursor: pointer;
+  main .servicios .cardsOfrecimientos .cardFinal div .textoCard {
+    color: #E55807;
+    padding-top: 10px;
+    margin: 10px;
   }
-  main .hoverDos:hover {
-    opacity: 1;
-    transition: transform 0.3s, opacity 0.3s;
+  main .servicios .cardsOfrecimientos .cardFinal div .textoCard h3 {
+    width: 95%;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 27.6px;
+    text-align: left;
   }
-  main #hoverDos:hover {
-    background-image: url(none);
-    cursor: pointer;
+  main .servicios .cardsOfrecimientos .cardFinal div .textoCard p {
+    width: 95%;
+    height: 100%;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 24.15px;
+    text-align: left;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  main .clientes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+  main .clientes .textoClientesUno .textoClientes {
+    color: #E55807;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 41.4px;
+    text-align: center;
+    width: 100%;
+  }
+  main .clientes .imgClientes {
+    padding: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .clientes .imgClientes .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  main .clientes .imgClientes .fila li {
+    list-style-type: none;
+  }
+  main .clientes .imgClientes .fila li img {
+    width: 110px;
+    height: cover;
+  }
+}
+@media (max-width: 767px) {
+  main .contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
   main .contacto .cuerpoFormulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 650px;
+    width: 350px;
+    height: 665px;
     border-radius: 28px;
-    padding: 0;
+    background-color: #0766AD;
+    color: #ECF8F9;
   }
-  main .contacto .cuerpoFormulario div {
+  main .contacto .cuerpoFormulario .textoFormulario {
+    width: 95%;
+  }
+  main .contacto .cuerpoFormulario .textoFormulario h2 {
+    width: 95%;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 41.4px;
     text-align: left;
   }
-  main .contacto .cuerpoFormulario div h2 {
-    padding: 0;
-  }
-  main .contacto .cuerpoFormulario div p {
-    padding: 0;
-    padding-left: 20px;
-    text-align: center;
+  main .contacto .cuerpoFormulario .textoFormulario p {
+    width: 95%;
+    top: 5965px;
+    left: 35px;
   }
   main .contacto .cuerpoFormulario form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    gap: 10px;
   }
   main .contacto .cuerpoFormulario form .primeraFormulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    color: rgb(147, 188, 219);
+    gap: 10px;
   }
   main .contacto .cuerpoFormulario form .primeraFormulario input {
-    width: 310px;
-    height: 43px;
-    border-radius: 10px;
-  }
-  main .contacto .cuerpoFormulario form .intermedioFormulario input {
-    width: 310px;
-    height: 43px;
-    border-radius: 10px;
-  }
-  main .contacto .cuerpoFormulario form div textarea {
-    width: 310px;
-    height: 144px;
-    border-radius: 10px;
-  }
-  main .contacto .cuerpoFormulario form div button {
     width: 290px;
     height: 43px;
     border-radius: 10px;
   }
-}
-.cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-  gap: 100px;
-}
-.cards div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 450px;
-  height: 320px;
-  border-radius: 18px;
-  background-color: #0766AD;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2509803922);
-  position: relative;
-}
-.cards div div {
-  color: #ECF8F9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.cards div div .cardImagen {
-  width: 85px;
-  height: 85px;
-  top: 30px;
-  left: 30px;
-  position: absolute;
-}
-.cards div div h2 {
-  padding-top: 80px;
-  width: 400px;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 27.6px;
-  text-align: left;
-}
-.cards div div p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: left;
-  width: 400px;
-  height: 60px;
-}
-
-.diferenciales {
-  justify-content: center;
-  padding-top: 200px;
-}
-.diferenciales div {
-  text-align: center;
-}
-.diferenciales div h3 {
-  display: inline;
-  color: #E55807;
-  width: 485px;
-  height: 46px;
-  top: 1126px;
-  left: 478px;
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 46px;
-}
-.diferenciales ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 100px;
-}
-.diferenciales ul li {
-  list-style-type: none;
-}
-.diferenciales ul li img {
-  width: 300px;
-  height: auto;
-  top: 1229px;
-  left: 129px;
-  background-size: cover;
-  background-position: center;
-}
-
-.conocenos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: " texto texto texto imagen ";
-  padding-top: 100px;
-  padding-bottom: 100px;
-  justify-content: center;
-  align-items: center;
-}
-.conocenos .textoConocenos {
-  grid-area: texto;
-  margin-left: 20px;
-}
-.conocenos .textoConocenos .texto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.conocenos .textoConocenos .texto h2 {
-  font-weight: 300;
-  font-size: 20px;
-  color: #E55807;
-}
-.conocenos .textoConocenos .texto h3 {
-  font-size: 50px;
-  font-weight: 700;
-  color: #E55807;
-  text-align: left;
-}
-.conocenos .textoConocenos .texto p {
-  font-size: 20px;
-  font-weight: 350;
-  line-height: 23px;
-  color: #0766AD;
-}
-.conocenos div {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  grid-area: imagen;
-  margin-right: 20px;
-}
-.conocenos div .imagenesConocenos {
-  padding-top: 40px;
-}
-.conocenos div .imagenesConocenos ul li {
-  list-style-type: none;
-  margin-bottom: 10px;
-}
-.conocenos div .imagenesConocenos ul li img {
-  width: 300px;
-  height: 248px;
-  border-radius: 25px 25px 50px 50px;
-  top: 1784px;
-  left: 734px;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease-in-out;
-}
-.conocenos div .parteDosImagen {
-  padding-top: 40px;
-}
-.conocenos div .parteDosImagen img {
-  width: 308px;
-  height: 484px;
-  border-radius: 25px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.imagen:hover {
-  transform: scale(1.6);
-}
-
-.imagenHover:hover {
-  transform: scale(1.6);
-}
-
-.servicios {
-  color: #ECF8F9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to bottom right, #E55807 50%, #0766AD 50%);
-}
-.servicios h2 {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 18.4px;
-  letter-spacing: 0.07em;
-  display: inline;
-  padding-top: 50px;
-}
-.servicios h3 {
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 46px;
-  display: inline;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.servicios .cardsOfrecimientos {
-  color: #E55807;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 20px;
-  gap: 30px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal {
-  background-color: #ECF8F9;
-  border-radius: 18px;
-  width: 450px;
-  height: 350px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div img {
-  width: 100%;
-  height: 200px;
-  border-radius: 18px 18px 0px 0px;
-  object-fit: cover;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div div {
-  padding-top: 20px;
-  padding-left: 10px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div div h3 {
-  width: 371px;
-  height: 27px;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 27.6px;
-  text-align: left;
-}
-.servicios .cardsOfrecimientos .ofrecimientosUno .cardFinal div div p {
-  padding-top: 10px;
-  width: 450px;
-  font-size: 21px;
-  font-weight: 500;
-  line-height: 24.15px;
-  text-align: left;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 20px;
-  gap: 30px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal {
-  background-color: #ECF8F9;
-  border-radius: 18px;
-  width: 450px;
-  height: 350px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div img {
-  width: 100%;
-  height: 200px;
-  border-radius: 18px 18px 0px 0px;
-  object-fit: cover;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div {
-  padding-top: 20px;
-  padding-left: 10px;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div h3 {
-  width: 371px;
-  height: 27px;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 27.6px;
-  text-align: left;
-}
-.servicios .cardsOfrecimientos .ofrecimientosDos .cardFinal div div p {
-  padding-top: 10px;
-  width: 450px;
-  font-size: 21px;
-  font-weight: 500;
-  line-height: 24.15px;
-  text-align: left;
-}
-
-.certificacion {
-  background-color: #ECF8F9;
-  border-radius: 18px;
-  width: 450px;
-  height: 350px;
-  overflow: hidden;
-  position: relative;
-}
-.certificacion div img {
-  width: 100%;
-  height: 200px;
-  border-radius: 18px 18px 0px 0px;
-  object-fit: cover;
-}
-.certificacion div div {
-  padding-top: 20px;
-  position: absolute;
-  padding-left: 10px;
-}
-.certificacion div div h3 {
-  width: 381px;
-  height: 48px;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 27.6px;
-  text-align: left;
-}
-.certificacion div div p {
-  padding-top: 10px;
-  width: 450px;
-  font-size: 21px;
-  font-weight: 500;
-  line-height: 24.15px;
-  text-align: left;
-}
-
-.hover:hover {
-  opacity: 0;
-  transition: transform 0.3s, opacity 0.3s;
-}
-
-#hoverUno:hover {
-  background-image: url(/Archivos/imagenes-card-final/imagenes-hover/imagen-1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 1;
-  cursor: pointer;
-}
-
-.hoverDos:hover {
-  opacity: 0;
-  transition: transform 0.3s, opacity 0.3s;
-}
-
-#hoverDos:hover {
-  background-image: url(/Archivos/imagenes-card-final/imagenes-hover/imagen-2.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 1;
-  cursor: pointer;
-}
-
-.clientes {
-  padding-top: 100px;
-}
-.clientes div {
-  text-align: center;
-}
-.clientes div h2 {
-  width: 619px;
-  height: 46px;
-  top: 50%;
-  left: 50%;
-  font-weight: 700;
-  font-size: 50px;
-  text-align: center;
-  color: #E55807;
-  display: inline;
-}
-.clientes .imgClientes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: normal;
-  padding-top: 80px;
-}
-.clientes .imgClientes .fila {
-  display: flex;
-}
-.clientes .imgClientes .fila li {
-  list-style: none;
-  padding-left: 20px;
-}
-.clientes .imgClientes .fila li img {
-  padding-left: 30px;
-  width: 200px;
-  height: cover;
-  top: 3274px;
-  left: 114px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imagenTele {
-  height: 65;
-  padding-top: 30px;
-}
-
-.imagenVersat {
-  height: 100px;
-}
-
-.contacto {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.contacto .cuerpoFormulario {
-  background-color: #0766AD;
-  width: 1280px;
-  height: 529px;
-  border-radius: 55px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.contacto .cuerpoFormulario div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #ECF8F9;
-}
-.contacto .cuerpoFormulario div h2 {
-  font-size: 50px;
-  font-weight: 700;
-}
-.contacto .cuerpoFormulario div p {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 23px;
-  text-align: left;
-  padding-left: 35px;
-}
-.contacto .cuerpoFormulario form {
-  padding-right: 50px;
-}
-.contacto .cuerpoFormulario form .primeraFormulario {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.contacto .cuerpoFormulario form .primeraFormulario input {
-  width: 290px;
-  height: 43px;
-  border-radius: 10px;
-  padding-left: 20px;
-}
-.contacto .cuerpoFormulario form .intermedioFormulario {
-  padding-top: 20px;
-}
-.contacto .cuerpoFormulario form .intermedioFormulario input {
-  width: 600px;
-  height: 43px;
-  border-radius: 10px;
-  opacity: 0px;
-  padding-left: 20px;
-}
-.contacto .cuerpoFormulario form div {
-  padding-top: 20px;
-}
-.contacto .cuerpoFormulario form div textarea {
-  width: 600px;
-  height: 144px;
-  top: 4006px;
-  left: 732px;
-  border-radius: 10px;
-  padding-left: 20px;
-}
-.contacto .cuerpoFormulario form div button {
-  padding-top: 5px;
-  width: 300px;
-  height: 43px;
-  border-radius: 10px;
-  color: #ECF8F9;
-  background-color: #E55807;
-  font-family: League Spartan;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 18.4px;
-}
-
-input::placeholder {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 13.8px;
-  text-align: left;
-  color: rgb(147, 188, 219);
-}
-
-textarea::placeholder {
-  font-size: 17px;
-  font-weight: 300;
-  line-height: 13.8px;
-  text-align: left;
-  color: rgb(147, 188, 219);
-  padding-top: 10px;
-}
-
-@media (max-width: 1024px) {
-  main .cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 100px;
-    gap: 50px;
+  main .contacto .cuerpoFormulario form .intermedioFormulario input {
+    width: 290px;
+    height: 43px;
+    border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form div textarea {
+    width: 290px;
+    height: 144px;
+    border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form div .button {
+    width: 290px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: #E55807;
+    color: #ECF8F9;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18.4px;
+    text-align: center;
+  }
+  main input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 13.8px;
+    text-align: left;
+    color: rgb(147, 188, 219);
+    padding-left: 10px;
+  }
+  main textarea::placeholder {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 13.8px;
+    text-align: left;
+    color: rgb(147, 188, 219);
+    padding-top: 10px;
+    padding-left: 10px;
   }
 }
-@media (max-width: 1024px) {
-  main .diferenciales {
+@media (min-width: 768px) and (max-width: 990px) {
+  main {
+    font-family: "League Spartan";
+  }
+  main .cards {
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+  main .cards .cardTotal {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 0;
-    padding-top: 80px;
+    align-items: center;
+    gap: 20px;
+  }
+  main .cards .cardTotal div {
+    width: 450px;
+    height: 350px;
+    border-radius: 18px;
+    opacity: 0px;
+    background-color: #0766AD;
+    color: #ECF8F9;
+    position: relative;
+  }
+  main .cards .cardTotal div .cardImagen {
+    width: 80px;
+    height: 80px;
+    left: 30px;
+    top: 25px;
+    position: absolute;
+  }
+  main .cards .cardTotal div h2 {
+    width: 100%;
+    margin-left: 5px;
+    padding-top: 130px;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 27.6px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  main .cards .cardTotal div p {
+    width: 90%;
+    height: 95%;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  main .diferenciales {
+    color: #E55807;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .diferenciales div h3 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    width: 100%;
   }
   main .diferenciales .imgDiferenciales {
     padding: 0;
@@ -978,91 +847,105 @@ textarea::placeholder {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 25px;
-    padding-top: 30px;
+    padding-top: 20px;
+    gap: 20px;
   }
   main .diferenciales .imgDiferenciales li {
-    padding: 0;
     padding-top: 35px;
+    list-style-type: none;
   }
   main .diferenciales .imgDiferenciales li img {
-    width: 350px;
+    width: 320px;
     height: auto;
   }
+  main .diferenciales .imgDiferenciales li .imagenDiferencialGrande {
+    width: 390px;
+    padding-left: 30px;
+  }
 }
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 990px) {
   main .conocenos {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: rgb(147, 188, 219);
+    height: 90%;
+  }
+  main .conocenos .textoConocenos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    flex-wrap: wrap;
+  }
+  main .conocenos .textoConocenos .texto {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   main .conocenos .textoConocenos .texto h2 {
+    color: #E55807;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 18, 4px;
     letter-spacing: 7%;
-    text-align: center;
-    color: #E55807;
-    display: inline;
+    text-align: left;
   }
   main .conocenos .textoConocenos .texto h3 {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 700;
     line-height: 46px;
-    text-align: center;
     color: #E55807;
-    display: inline;
   }
   main .conocenos .textoConocenos .texto p {
-    width: 75%;
-    font-size: 20px;
+    width: 90%;
+    font-size: 28px;
     font-weight: 400;
-    line-height: 23px;
+    line-height: 28px;
     text-align: left;
     color: #0766AD;
+  }
+  main .conocenos .textoConocenos .texto span {
+    font-weight: 700;
+    font-size: 28px;
   }
   main .conocenos div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
-  }
-  main .conocenos div .imagenesConocenos {
-    padding: 0;
   }
   main .conocenos div .imagenesConocenos ul {
     padding: 0;
   }
   main .conocenos div .imagenesConocenos ul li {
-    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 50px;
   }
   main .conocenos div .imagenesConocenos ul li img {
-    padding: 0;
-    border-radius: 25px 25px 50px 50px;
-    width: 500px;
-    height: 350px;
+    width: 80%;
+    height: 40%;
+    border-radius: 25px;
   }
   main .conocenos div .parteDosImagen {
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
   }
-  main .conocenos div .parteDosImagen img {
-    padding: 0;
-    width: 500px;
-    height: 600px;
-  }
-  main .conocenos .imagenHover:hover {
-    transform: none;
-  }
-  main .conocenos .imagen:hover {
-    transform: none;
+  main .conocenos div .parteDosImagen .imagen {
+    width: 80%;
+    height: 95%;
+    border-radius: 25px;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 990px) {
   main {
     font-family: "League Spartan";
   }
@@ -1073,75 +956,618 @@ textarea::placeholder {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom right, #E55807 50%, #0766AD 50%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  main .servicios h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 13.8px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    padding-bottom: 5px;
   }
   main .servicios h3 {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 65px;
     text-align: center;
   }
-  main .servicios .cardsOfrecimientos .ofrecimientosUno {
+  main .servicios .cardsOfrecimientos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
-  main .servicios .cardsOfrecimientos .ofrecimientosDos {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 30px;
+  main .servicios .cardsOfrecimientos .cardFinal {
+    width: 320px;
+    height: 340px;
+    border-radius: 18px;
+    background-color: #ECF8F9;
   }
-  main .hover:hover {
-    opacity: 1;
-    transition: transform 0.3s, opacity 0.3s;
+  main .servicios .cardsOfrecimientos .cardFinal div .imagenCard img {
+    width: 320px;
+    height: 150px;
+    border-radius: 18px 18px 0px 0px;
+    object-fit: cover;
   }
-  main #hoverUno:hover {
-    background-image: url(none);
-    cursor: pointer;
+  main .servicios .cardsOfrecimientos .cardFinal div .textoCard {
+    color: #E55807;
+    padding-top: 10px;
+    margin: 10px;
   }
-  main .hoverDos:hover {
-    opacity: 1;
-    transition: transform 0.3s, opacity 0.3s;
+  main .servicios .cardsOfrecimientos .cardFinal div .textoCard h3 {
+    width: 95%;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 27.6px;
+    text-align: left;
   }
-  main #hoverDos:hover {
-    background-image: url(none);
-    cursor: pointer;
+  main .servicios .cardsOfrecimientos .cardFinal div .textoCard p {
+    width: 95%;
+    height: 100%;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 24.15px;
+    text-align: left;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 990px) {
   main .clientes {
-    padding: 0;
-    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+  main .clientes .textoClientesUno .textoClientes {
+    color: #E55807;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 41.4px;
+    text-align: center;
+    width: 100%;
   }
   main .clientes .imgClientes {
     padding: 0;
-    padding-top: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   main .clientes .imgClientes .fila {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 70px;
+  }
+  main .clientes .imgClientes .fila li {
+    list-style-type: none;
+  }
+  main .clientes .imgClientes .fila li img {
+    width: 220px;
+    height: cover;
+  }
+  main .clientes .imgClientes .fila li .imagenClientesChicas {
+    width: 180px;
+    height: cover;
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  main .contacto {
+    display: flex;
+    flex-direction: "";
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+  main .contacto .cuerpoFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    height: 800px;
+    border-radius: 28px;
+    background-color: #0766AD;
+    color: #ECF8F9;
+  }
+  main .contacto .cuerpoFormulario .textoFormulario {
+    width: 95%;
+  }
+  main .contacto .cuerpoFormulario .textoFormulario h2 {
+    width: 95%;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+  }
+  main .contacto .cuerpoFormulario .textoFormulario p {
+    width: 95%;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  main .contacto .cuerpoFormulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  main .contacto .cuerpoFormulario form .primeraFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(147, 188, 219);
+    gap: 10px;
+  }
+  main .contacto .cuerpoFormulario form .primeraFormulario input {
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form .intermedioFormulario input {
+    width: 550px;
+    height: 50px;
+    border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form div textarea {
+    width: 550px;
+    height: 160px;
+    border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form div .button {
+    width: 350px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #E55807;
+    color: #ECF8F9;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 18.4px;
+    text-align: center;
+  }
+  main input::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 13.8px;
+    text-align: left;
+    color: rgb(147, 188, 219);
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  main textarea::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 13.8px;
+    text-align: left;
+    color: rgb(147, 188, 219);
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+@media (min-width: 991px) {
+  main {
+    font-family: "League Spartan";
+  }
+  main .cards {
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+  main .cards .cardTotal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  main .cards .cardTotal div {
+    width: 450px;
+    height: 370px;
+    border-radius: 18px;
+    opacity: 0px;
+    background-color: #0766AD;
+    color: #ECF8F9;
+    position: relative;
+  }
+  main .cards .cardTotal div .cardImagen {
+    width: 93px;
+    height: 93px;
+    left: 30px;
+    top: 30px;
+    position: absolute;
+  }
+  main .cards .cardTotal div h2 {
+    width: 100%;
+    margin-left: 5px;
+    padding-top: 150px;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 27.6px;
+    text-align: left;
+    margin-left: 20px;
+  }
+  main .cards .cardTotal div p {
+    width: 90%;
+    height: 95%;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 991px) {
+  main .diferenciales {
+    color: #E55807;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .diferenciales div h3 {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    width: 100%;
+  }
+  main .diferenciales .imgDiferenciales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    gap: 10px;
+  }
+  main .diferenciales .imgDiferenciales li {
+    display: flex;
+    flex-direction: "";
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    list-style-type: none;
+  }
+  main .diferenciales .imgDiferenciales li img {
+    padding: 0;
+    width: 230px;
+    height: auto;
+  }
+  main .diferenciales .imgDiferenciales li .imagenDiferencialGrande {
+    width: 240px;
+  }
+}
+@media (min-width: 991px) {
+  .conocenos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: " texto texto texto imagen ";
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+  .conocenos .textoConocenos {
+    grid-area: texto;
+    margin-left: 20px;
+  }
+  .conocenos .textoConocenos .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .conocenos .textoConocenos .texto h2 {
+    font-weight: 300;
+    font-size: 20px;
+    color: #E55807;
+  }
+  .conocenos .textoConocenos .texto h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #E55807;
+    text-align: left;
+  }
+  .conocenos .textoConocenos .texto p {
+    font-size: 21px;
+    font-weight: 350;
+    line-height: 23px;
+    color: #0766AD;
+  }
+  .conocenos .textoConocenos .texto p span {
+    font-size: 22;
+    font-weight: 500;
+  }
+  .conocenos div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    grid-area: imagen;
+    margin-right: 20px;
+  }
+  .conocenos div .imagenesConocenos {
+    padding-top: 40px;
+  }
+  .conocenos div .imagenesConocenos ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  .conocenos div .imagenesConocenos ul li img {
+    width: 300px;
+    height: 248px;
+    border-radius: 25px 25px 50px 50px;
+    top: 1784px;
+    left: 734px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .conocenos div .parteDosImagen {
+    padding-top: 40px;
+  }
+  .conocenos div .parteDosImagen img {
+    width: 308px;
+    height: 484px;
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .imagen:hover {
+    transform: scale(1.6);
+  }
+  .imagenHover:hover {
+    transform: scale(1.6);
+  }
+}
+@media (min-width: 991px) {
+  main {
+    font-family: "League Spartan";
+  }
+  main .servicios {
+    color: #ECF8F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #E55807 50%, #0766AD 50%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 10px;
+  }
+  main .servicios h2 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 13.8px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  main .servicios h3 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 65px;
+    text-align: center;
+  }
+  main .servicios .cardsOfrecimientos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  main .servicios .cardsOfrecimientos .cardFinal {
+    width: 360px;
+    height: 380px;
+    border-radius: 18px;
+    background-color: #ECF8F9;
+  }
+  main .servicios .cardsOfrecimientos .cardFinal div .imagenCard img {
+    width: 360px;
+    height: 180px;
+    border-radius: 18px 18px 0px 0px;
+    object-fit: cover;
+  }
+  main .servicios .cardsOfrecimientos .cardFinal div .textoCard {
+    color: #E55807;
+    padding-top: 10px;
+    margin: 10px;
+  }
+  main .servicios .cardsOfrecimientos .cardFinal div .textoCard h3 {
+    width: 95%;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 27.6px;
+    text-align: left;
+  }
+  main .servicios .cardsOfrecimientos .cardFinal div .textoCard p {
+    width: 95%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24.15px;
+    text-align: left;
+  }
+}
+@media (min-width: 991px) {
+  main .clientes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+  main .clientes .textoClientesUno .textoClientes {
+    color: #E55807;
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 41.4px;
+    text-align: center;
+    width: 100%;
+  }
+  main .clientes .imgClientes {
+    padding: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .clientes .imgClientes .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  main .clientes .imgClientes .fila li {
+    list-style-type: none;
   }
   main .clientes .imgClientes .fila li img {
     width: 250px;
     height: cover;
-    padding: 0;
+  }
+  main .clientes .imgClientes .fila li .imagenClientesChicas {
+    width: 230px;
+    height: cover;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 991px) {
+  main .diferenciales {
+    color: #E55807;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .diferenciales div h3 {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    width: 100%;
+  }
+  main .diferenciales .imgDiferenciales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    gap: 10px;
+  }
+  main .diferenciales .imgDiferenciales li {
+    display: flex;
+    flex-direction: "";
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    list-style-type: none;
+  }
+  main .diferenciales .imgDiferenciales li img {
+    padding: 0;
+    width: 230px;
+    height: auto;
+  }
+  main .diferenciales .imgDiferenciales li .imagenDiferencialGrande {
+    width: 240px;
+  }
+}
+@media (min-width: 991px) {
+  main .contacto {
+    display: flex;
+    flex-direction: "";
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
   main .contacto .cuerpoFormulario {
-    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 950px;
+    border-radius: 28px;
+    background-color: #0766AD;
+    color: #ECF8F9;
   }
-  main .contacto .cuerpoFormulario div {
-    margin-left: 10px;
+  main .contacto .cuerpoFormulario .textoFormulario {
+    width: 95%;
   }
-  main .contacto .cuerpoFormulario div h2 {
-    padding: 0;
-    line-height: 43px;
+  main .contacto .cuerpoFormulario .textoFormulario h2 {
+    width: 95%;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
   }
-  main .contacto .cuerpoFormulario div p {
-    padding: 0;
+  main .contacto .cuerpoFormulario .textoFormulario p {
+    width: 95%;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 40px;
   }
   main .contacto .cuerpoFormulario form {
-    padding: 0;
-    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  main .contacto .cuerpoFormulario form .primeraFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(147, 188, 219);
+    gap: 30px;
+    padding-top: 20px;
+  }
+  main .contacto .cuerpoFormulario form .primeraFormulario input {
+    width: 700px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form .intermedioFormulario input {
+    width: 700px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form div textarea {
+    width: 700px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form div .button {
+    width: 450px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #E55807;
+    color: #ECF8F9;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 18.4px;
+    text-align: center;
+  }
+  main input::placeholder {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 13.8px;
+    text-align: left;
+    color: rgb(147, 188, 219);
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  main textarea::placeholder {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 13.8px;
+    text-align: left;
+    color: rgb(147, 188, 219);
+    padding-top: 10px;
+    padding-left: 10px;
   }
 }
 

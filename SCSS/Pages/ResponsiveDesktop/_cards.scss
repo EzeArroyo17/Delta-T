@@ -1,4 +1,4 @@
-@media (min-width:768px) and (max-width:990px) {
+@media (min-width:991px) {
     main {
         font-family: "League Spartan";
         .cards {
@@ -12,24 +12,24 @@
                 gap: 20px;
                 div {
                     width: 450px;
-                    height: 350px;
+                    height: 370px;
                     border-radius: 18px;
                     opacity: 0px;
                     background-color: nth($list: $colores , $n: 1);
                     color: nth($list: $colores , $n: 2);
                     position: relative;
                     .cardImagen {
-                        width: 80px;
-                        height: 80px;
+                        width: 93px;
+                        height: 93px;
                         left: 30px;
-                        top: 25px;
+                        top: 30px;
                         position: absolute;
                     }
 
                     h2 {
                         width: 100%;
                         margin-left: 5px;
-                        padding-top: 130px;
+                        padding-top: 150px;
                         font-size: 33px;
                         font-weight: 700;
                         line-height: 27.6px;

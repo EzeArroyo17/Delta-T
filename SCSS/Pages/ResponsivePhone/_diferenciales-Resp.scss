@@ -1,13 +1,13 @@
-@media (min-width:768px) and (max-width:990px) {
+@media (max-width:767px) {
     main {
         .diferenciales {
             color: nth($list: $colores , $n: 3);
             @include flex(column, center, center);
             div {
                 h3 {
-                    font-size: 70px;
+                    font-size: 45px;
                     font-weight: 700;
-                    line-height: 60px;
+                    line-height: 41.4px;
                     text-align: center;
                     width: 100%;
                 }
@@ -26,12 +26,8 @@
                     padding-top: 35px;
                     list-style-type: none;
                     img {
-                        width: 320px;
+                        width: 160px;
                         height: auto;
-                    }
-                    .imagenDiferencialGrande{
-                        width: 390px;
-                       padding-left: 30px;
                     }
                 }
             }

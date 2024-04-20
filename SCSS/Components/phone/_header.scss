@@ -1,0 +1,112 @@
+@media (max-width:767px) {
+    header {
+        background-color: nth($list: $colores , $n: 4);
+        height: auto;
+
+        nav {
+
+            div {
+
+                a {
+                    padding: 30px;
+
+                    img {
+                        width: 60px;
+                        height: 45px;
+                    }
+                }
+
+                button {
+                    .menu-ham {
+                        background-image: url(/Archivos/Iconos-card-uno/menu-hamburguesa.png);
+                    }
+                }
+
+                .menu {
+                    padding-top: 10px;
+
+                    ul {
+                        gap: 10px;
+
+                        .nav-item {
+                            list-style-type: none;
+
+                            a {
+                                padding: 0;
+                                font-size: 15px;
+                                font-weight: 650;
+                                line-height: 18px;
+                                letter-spacing: 0.08em;
+                                color: nth($list: $colores , $n: 2);
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .imagenCentral {
+            padding: 0;
+            background-image: url(/Archivos/Logo-Imagen-central/imagen-header.jpg);
+            background-size: cover;
+            background-position: center;
+            color: nth($list: $colores , $n: 2);
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .primeraParte {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                h1 {
+                    padding: 0;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+
+                h2 {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+            }
+
+            .segundaParte {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                .subrayado {
+                    font-size: 30px;
+                    font-weight: 900;
+                    line-height: 35px;
+                    text-align:center;
+                    padding: 0;
+                    width: 70%;
+                    span {
+                        text-decoration: underline nth($list: $colores , $n: 3) 10px;
+                    }
+                }
+
+                p {
+                    padding: 0;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    text-align: center;
+                }
+            }
+
+            .deltaArriba {
+                display: none;
+            }
+
+            .deltaAbajo {
+                display: none;
+            }
+        }
+    }
+}

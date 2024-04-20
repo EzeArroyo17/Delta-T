@@ -1,4 +1,4 @@
-@media (min-width:768px) and (max-width:990px) {
+@media (min-width:991px) {
     main {
         .contacto {
             @include flex( "", center, center);
@@ -7,8 +7,8 @@
 
             .cuerpoFormulario {
                 @include flex(column, center, center);
-                width: 650px;
-                height: 800px;
+                width: 800px;
+                height: 950px;
                 border-radius: 28px;
                 background-color: nth($list: $colores , $n: 1);
                 color: nth($list: $colores , $n: 2);
@@ -18,33 +18,33 @@
 
                     h2 {
                         width: 95%;
-                        font-size: 65px;
+                        font-size: 75px;
                         font-weight: 700;
-                        line-height: 50px;
+                        line-height: 60px;
                         text-align: left;
 
                     }
 
                     p {
                         width: 95%;
-                        font-size: 30px;
+                        font-size: 35px;
                         font-weight: 400;
-                        line-height: 30px;
+                        line-height: 40px;
                     }
                 }
 
                 form {
                     @include flex(column, center, center);
-                    gap: 20px;
+                    gap: 30px;
 
                     .primeraFormulario {
                         @include flex(column, center, center);
                         color: nth($list: $colores , $n: 5);
-                        gap: 10px;
-
+                        gap: 30px;
+                        padding-top: 20px;
                         input {
-                            width: 550px;
-                            height: 50px;
+                            width: 700px;
+                            height: 60px;
                             border-radius: 10px;
                         }
 
@@ -53,28 +53,28 @@
 
                     .intermedioFormulario {
                         input {
-                            width: 550px;
-                            height: 50px;
+                            width: 700px;
+                            height: 60px;
                             border-radius: 10px;
                         }
                     }
 
                     div {
                         textarea {
-                            width: 550px;
-                            height: 160px;
+                            width: 700px;
+                            height: 200px;
                             border-radius: 10px;
                         }
                     }
 
                     div {
                         .button {
-                            width: 350px;
-                            height: 55px;
+                            width: 450px;
+                            height: 60px;
                             border-radius: 10px;
                             background-color: nth($list: $colores , $n: 3);
                             color: nth($list: $colores , $n: 2);
-                            font-size: 25px;
+                            font-size: 30px;
                             font-weight: 700;
                             line-height: 18.4px;
                             text-align: center;
@@ -88,7 +88,7 @@
         }
 
         input::placeholder {
-            font-size: 20px;
+            font-size: 23px;
             font-weight: 500;
             line-height: 13.8px;
             text-align: left;
@@ -98,7 +98,7 @@
         }
 
         textarea::placeholder {
-            font-size: 20px;
+            font-size: 23px;
             font-weight: 500;
             line-height: 13.8px;
             text-align: left;

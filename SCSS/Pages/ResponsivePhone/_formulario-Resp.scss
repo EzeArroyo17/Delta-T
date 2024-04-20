@@ -1,14 +1,15 @@
-@media (min-width:768px) and (max-width:990px) {
+@media (max-width:767px) {
     main {
         .contacto {
-            @include flex( "", center, center);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding-bottom: 100px;
             padding-top: 50px;
-
             .cuerpoFormulario {
                 @include flex(column, center, center);
-                width: 650px;
-                height: 800px;
+                width: 350px;
+                height: 665px;
                 border-radius: 28px;
                 background-color: nth($list: $colores , $n: 1);
                 color: nth($list: $colores , $n: 2);
@@ -18,63 +19,58 @@
 
                     h2 {
                         width: 95%;
-                        font-size: 65px;
+                        font-size: 45px;
                         font-weight: 700;
-                        line-height: 50px;
+                        line-height: 41.4px;
                         text-align: left;
 
                     }
 
                     p {
                         width: 95%;
-                        font-size: 30px;
-                        font-weight: 400;
-                        line-height: 30px;
+                        top: 5965px;
+                        left: 35px;
                     }
                 }
 
                 form {
                     @include flex(column, center, center);
-                    gap: 20px;
-
+                    gap: 10px;
                     .primeraFormulario {
                         @include flex(column, center, center);
                         color: nth($list: $colores , $n: 5);
                         gap: 10px;
-
                         input {
-                            width: 550px;
-                            height: 50px;
+                            width: 290px;
+                            height: 43px;
                             border-radius: 10px;
                         }
-
                         .phone {}
                     }
-
                     .intermedioFormulario {
                         input {
-                            width: 550px;
-                            height: 50px;
+                            width: 290px;
+                            height: 43px;
                             border-radius: 10px;
                         }
                     }
 
                     div {
                         textarea {
-                            width: 550px;
-                            height: 160px;
+                            width: 290px;
+                            height: 144px;
                             border-radius: 10px;
                         }
                     }
 
                     div {
                         .button {
-                            width: 350px;
-                            height: 55px;
+                            width: 290px;
+                            height: 43px;
                             border-radius: 10px;
                             background-color: nth($list: $colores , $n: 3);
                             color: nth($list: $colores , $n: 2);
-                            font-size: 25px;
+                            font-size: 20px;
                             font-weight: 700;
                             line-height: 18.4px;
                             text-align: center;
@@ -88,18 +84,17 @@
         }
 
         input::placeholder {
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 400;
             line-height: 13.8px;
             text-align: left;
             color: nth($list: $colores , $n: 5);
             padding-left: 10px;
-            padding-top: 10px;
         }
-
+        
         textarea::placeholder {
-            font-size: 20px;
-            font-weight: 500;
+            font-size: 17px;
+            font-weight: 400;
             line-height: 13.8px;
             text-align: left;
             color: nth($list: $colores , $n: 5);

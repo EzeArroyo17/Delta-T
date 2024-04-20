@@ -4,37 +4,38 @@
 @import "Utilities/list";
 
 
-@import "Components/header";
-@import "Components/footer";
-
-@import "Components/Responsive/header";
-@import "Components/Responsive/footer";
-
-@import "Components/ResponsiveTablet/headerResp";
 
 
 
+@import "Components/phone/header";
+@import "Components/phone/footer";
+
+@import "Components/tablet/header";
+@import "Components/tablet/footer";
+
+@import "Components/compu/header";
+@import "Components/compu/footer";
 
 
-
-@import "Pages/Responsive/card-Resp";
-@import "Pages/Responsive/diferenciales-Resp";
-@import "Pages/Responsive/conocenos-Resp";
-@import "Pages/Responsive/clientes-Resp";
-@import "Pages/Responsive/servicios-Resp";
-@import "Pages/Responsive/formulario-Resp";
-
-@import "Pages/cards";
-@import "Pages/diferenciales";
-@import "Pages/conocenos";
-@import "Pages/servicios";
-@import "Pages/clientes";
-@import "Pages/formulario";
-
+@import "Pages/ResponsivePhone/card-Resp";
+@import "Pages/ResponsivePhone/diferenciales-Resp";
+@import "Pages/ResponsivePhone/conocenos-Resp";
+@import "Pages/ResponsivePhone/servicios-Resp";
+@import "Pages/ResponsivePhone/clientes-Resp";
+@import "Pages/ResponsivePhone/formulario-Resp";
 
 @import "Pages/ResponsiveTablet/cardsResp";
 @import "Pages/ResponsiveTablet/diferencialesResp";
 @import "Pages/ResponsiveTablet/conocenosResp";
-@import "Pages//ResponsiveTablet/serviciosResp";
+@import "Pages/ResponsiveTablet/serviciosResp";
 @import "Pages/ResponsiveTablet/clientesResp";
 @import "Pages/ResponsiveTablet/formularioResp";
+
+
+@import "Pages/ResponsiveDesktop/cards";
+@import "Pages/ResponsiveDesktop/diferenciales";
+@import "Pages/ResponsiveDesktop/conocenos";
+@import "Pages/ResponsiveDesktop/servicios";
+@import "Pages/ResponsiveDesktop/clientes";
+@import "Pages/ResponsiveDesktop/diferenciales";
+@import "Pages/ResponsiveDesktop/formulario";

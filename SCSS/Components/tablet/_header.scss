@@ -1,0 +1,112 @@
+@media (min-width:768px) and (max-width:991px) {
+    header {
+        background-color: nth($list: $colores , $n: 4);
+        height: auto;
+        font-family: "League Spartan";
+        nav {
+            div {
+                a {
+                    padding: 50px;
+                    img {
+                        width: 70px;
+                        height: 60px;
+                    }
+                }
+                button {
+                    .menu-ham {
+                        background-image: url(/Archivos/Iconos-card-uno/menu-hamburguesa.png);
+                    }
+                }
+                .menu {
+                    padding-top: 25px;
+                    flex-grow: 0;
+                    ul {
+                        gap: 20px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        .nav-item {
+                            list-style-type: none;
+                            a {
+                                padding: 0;
+                                font-size: 23px;
+                                font-weight: 650;
+                                line-height: 25px;
+                                letter-spacing: 0.08em;
+                                color: nth($list: $colores , $n: 2);
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .imagenCentral {
+            padding: 0;
+            background-image: url(/Archivos/Logo-Imagen-central/imagen-header.jpg);
+            background-size: cover;
+            background-position: center;
+            color: nth($list: $colores , $n: 2);
+            padding-left: 20px;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .primeraParte {
+                display: flex;
+                flex-direction: column;
+                h1 {
+                    font-size: 25px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+
+                h2 {
+                    font-size: 25px;
+                    text-align: center;
+                    font-weight: 400;
+                }
+            }
+
+            .segundaParte {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+
+                .subrayado {
+                    font-size: 65px;
+                    font-weight: 900;
+                    line-height: 60px;
+                    text-align: center;
+                    width: 80%;
+                    padding: 0;
+                    span {
+                        text-decoration: underline nth($list: $colores , $n: 3) 15px;
+                    }
+                }
+
+                p {
+                    padding: 0;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-align: center;
+                    width: 80%;
+                }
+            }
+
+            .deltaArriba {
+                display: none;
+            }
+
+            .deltaAbajo {
+                display: none;
+            }
+        }
+    }
+}
