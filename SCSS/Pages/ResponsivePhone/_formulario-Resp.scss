@@ -8,7 +8,7 @@
             padding-top: 50px;
             .cuerpoFormulario {
                 @include flex(column, center, center);
-                width: 350px;
+                width: 90%;
                 height: 665px;
                 border-radius: 28px;
                 background-color: nth($list: $colores , $n: 1);
@@ -41,7 +41,7 @@
                         color: nth($list: $colores , $n: 5);
                         gap: 10px;
                         input {
-                            width: 290px;
+                            width: 280px;
                             height: 43px;
                             border-radius: 10px;
                         }
@@ -49,7 +49,7 @@
                     }
                     .intermedioFormulario {
                         input {
-                            width: 290px;
+                            width: 280px;
                             height: 43px;
                             border-radius: 10px;
                         }
@@ -57,7 +57,7 @@
 
                     div {
                         textarea {
-                            width: 290px;
+                            width: 280px;
                             height: 144px;
                             border-radius: 10px;
                         }
@@ -65,7 +65,7 @@
 
                     div {
                         .button {
-                            width: 290px;
+                            width: 280px;
                             height: 43px;
                             border-radius: 10px;
                             background-color: nth($list: $colores , $n: 3);

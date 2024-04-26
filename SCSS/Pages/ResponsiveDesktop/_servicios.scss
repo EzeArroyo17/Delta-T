@@ -1,16 +1,17 @@
 @media (min-width:991px) {
     main {
-        font-family: "League Spartan";
 
         .servicios {
             color: nth($list: $colores , $n: 2);
             @include flex(column, center, center);
             background: linear-gradient(to bottom right, nth($list: $colores , $n: 3) 50%, nth($list: $colores , $n: 1) 50%);
+            gap: 20px;
+            border-left: 30px;
+            border-right: 30px;
             padding-top: 50px;
-            padding-bottom: 50px;
-            gap: 10px;
+
             h2 {
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: 400;
                 line-height: 13.8px;
                 letter-spacing: 0.07em;
@@ -20,7 +21,7 @@
             }
 
             h3 {
-                font-size: 70px;
+                font-size: 55px;
                 font-weight: 700;
                 line-height: 65px;
                 text-align: center;
@@ -28,36 +29,47 @@
             }
 
             .cardsOfrecimientos {
+                padding: 0;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 30px;
+                gap: 100px;
                 padding-top: 50px;
                 padding-bottom: 50px;
+
+                position: relative;
+                overflow: hidden;
+
                 .cardFinal {
-                    width: 360px;
-                    height: 380px;
+                    width: 430px;
+                    height: 310px;
                     border-radius: 18px;
                     background-color: nth($list: $colores , $n: 2);
 
+                    transition: all 400ms ease-out;
+
                     div {
+                        transition: all 400ms ease-out;
+                        will-change: transform;
+
                         .imagenCard {
                             img {
-                                width: 360px;
+                                width: 430px;
                                 height: 180px;
                                 border-radius: 18px 18px 0px 0px;
-                                object-fit:cover;
+                                object-fit: cover;
 
                             }
                         }
 
                         .textoCard {
-                            color: nth($list:$colores , $n: 3);
+                            color: nth($list: $colores , $n: 3);
                             padding-top: 10px;
                             margin: 10px;
+
                             h3 {
                                 width: 95%;
-                                font-size: 28px;
+                                font-size: 24px;
                                 font-weight: 800;
                                 line-height: 27.6px;
                                 text-align: left;
@@ -66,14 +78,102 @@
                             p {
                                 width: 95%;
                                 height: 100%;
-                                font-size: 24px;
+                                font-size: 21px;
                                 font-weight: 400;
                                 line-height: 24.15px;
                                 text-align: left;
                             }
                         }
+
                     }
+
+
+                    .textoHover {
+                        position: absolute;
+                        top: 0;
+                        width: 430px;
+                        height: 310px;
+                        border-radius: 18px;
+                        background-color: rgba(27, 115, 180, 0.8);
+                        transition: all 500ms ease-out;
+                        opacity: 0;
+                        visibility: hidden;
+                        text-align: left;
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 40px;
+                        text-align: left;
+                        padding: 30px;
+
+                        li {
+                            color: white;
+                            transition: all 400ms ease-out;
+                        }
+
+                    }
+
+                    .textoHoverDos {
+                        position: absolute;
+                        top: 0;
+                        width: 430px;
+                        height: 310px;
+                        border-radius: 18px;
+                        background-color: rgba(27, 115, 180, 0.8);
+                        transition: all 500ms ease-out;
+                        opacity: 0;
+                        visibility: hidden;
+                        text-align: left;
+                        font-size: 24px;
+                        font-weight: 500;
+                        list-style-type: none;
+                        line-height: 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 40px;
+
+                        li {
+                            transition: all 400ms ease-out;
+                            list-style-type: none;
+                            display: flex;
+                            padding-left: 50px;
+
+                            a {
+                                color: white;
+                                text-decoration: none;
+                                justify-content: left;
+                            }
+
+                            img {
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 9px;
+                                position: absolute;
+                                left: 80%;
+
+                            }
+                        }
+
+                    }
+
+
                 }
+
+                .nav{
+                    display: none;
+                }
+                .cardFinal div:hover>.textoHover {
+                    opacity: 1;
+                    visibility: visible;
+                    cursor: pointer;
+                }
+
+                .cardFinal div:hover>.textoHoverDos {
+                    opacity: 1;
+                    visibility: visible;
+                    cursor: pointer;
+                }
+
             }
         }
     }

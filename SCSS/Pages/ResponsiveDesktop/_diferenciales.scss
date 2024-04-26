@@ -3,9 +3,13 @@
         .diferenciales {
             color: nth($list: $colores , $n: 3);
             @include flex(column, center, center);
+            padding-top: 200px;
+            border-left: 30px;
+            border-right: 30px;
+
             div {
                 h3 {
-                    font-size: 75px;
+                    font-size: 55px;
                     font-weight: 700;
                     line-height: 60px;
                     text-align: center;
@@ -15,26 +19,28 @@
 
             .imgDiferenciales {
                 display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
                 padding-top: 20px;
-                gap: 10px;
+                gap: 100px;
+
                 li {
                     @include flex("", center, center);
                     padding-top: 35px;
                     list-style-type: none;
                     img {
                         padding: 0;
-                        width: 230px;
+                        width: 240px;
                         height: auto;
                     }
-                    .imagenDiferencialGrande{
-                        width: 240px;
+
+                    .imagenGrande{
+                        width: 260px;
+                        height: auto;
                     }
                 }
-            }
-
-            .imagenCentral {
             }
         }
     }

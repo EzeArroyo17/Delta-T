@@ -5,7 +5,7 @@
             @include flex(column, center, center);
             div {
                 h3 {
-                    font-size: 70px;
+                    font-size: 55px;
                     font-weight: 700;
                     line-height: 60px;
                     text-align: center;
@@ -26,12 +26,12 @@
                     padding-top: 35px;
                     list-style-type: none;
                     img {
-                        width: 320px;
+                        width: 240px;
                         height: auto;
                     }
                     .imagenDiferencialGrande{
-                        width: 390px;
-                       padding-left: 30px;
+                        width: 260px;
+                        padding-left: 30px;
                     }
                 }
             }

@@ -8,6 +8,7 @@
             background: linear-gradient(to bottom right, nth($list: $colores , $n: 3) 50%, nth($list: $colores , $n: 1) 50%);
             padding-top: 20px;
             padding-bottom: 20px;
+
             h2 {
                 font-size: 15px;
                 font-weight: 300;
@@ -33,26 +34,27 @@
                 gap: 20px;
 
                 .cardFinal {
-                    width: 302px;
-                    height: 335px;
+                    width: 90%;
+                    height: 100%;
                     border-radius: 18px;
                     background-color: nth($list: $colores , $n: 2);
 
                     div {
                         .imagenCard {
                             img {
-                                width: 302px;
-                                height: 150px;
+                                width: 100%;
+                                height: 155px;
                                 border-radius: 18px 18px 0px 0px;
-                                object-fit:cover;
+                                object-fit: cover;
 
                             }
                         }
 
                         .textoCard {
-                            color: nth($list:$colores , $n: 3);
+                            color: nth($list: $colores , $n: 3);
                             padding-top: 10px;
                             margin: 10px;
+
                             h3 {
                                 width: 95%;
                                 font-size: 24px;
@@ -71,6 +73,109 @@
                             }
                         }
                     }
+
+                    .textoHover {
+                        display: none;
+                    }
+
+                    .textoHoverDos {
+                        display: none;
+                    }
+                }
+
+                .nav {
+                    width: 90%;
+                    height: auto;
+                    padding-top: 15px;
+                    background-color: rgba(27, 115, 180, 0.8);
+                    border-radius: 18px;
+                    display: flex;
+                    justify-content: center;
+
+                    .list {
+
+                        .list__item {
+                            text-align: left;
+                            overflow: hidden;
+
+                            .list__button {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 60%;
+                                height: 10px;
+                                margin: 0 auto;
+
+                                .nav__link {
+                                    font-family: "League Spartan", sans-serif;
+                                    display: block;
+                                    text-decoration: none;
+                                    color: nth($list: $colores , $n: 2);
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                }
+
+                                .listArrow {
+                                    margin-left: auto;
+                                    transition: transform .3s;
+                                    width: 15px;
+                                    height: 15px;
+                                    margin-bottom: 5px;
+                                }
+
+                            }
+
+                            .list__show {
+                                transition: heigth .4s;
+                                height: 0;
+                                text-decoration: none;
+
+                                .list__Inside {
+                                    @include flex(column, center, center);
+                                    gap: 15px;
+                                    text-decoration: none;
+                                    padding-top: 20px;
+
+                                    .list__Inside--Dos {
+                                        display: flex;
+                                    }
+
+                                    .nav__link {
+                                        text-decoration: none;
+                                        color: nth($list: $colores , $n: 2);
+                                        width: 100%;
+                                        font-size: 20px;
+                                        font-weight: 400;
+                                        list-style-type: none;
+                                        line-height: 20px;
+                                        justify-content: left;
+                                    }
+
+                                    .imagen {
+                                        width: 30px;
+                                        height: 30px;
+                                        margin-right: 10px;
+                                    }
+
+                                    .pepe {
+                                        @include flex(row, center, center);
+                                        width: 99%;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    .list__item--click {
+                        cursor: pointer;
+                    }
+
+                    .arrow .listArrow {
+                        transform: rotate(90deg);
+                    }
+
+
                 }
             }
         }

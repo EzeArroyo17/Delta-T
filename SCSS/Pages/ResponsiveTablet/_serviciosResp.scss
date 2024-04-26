@@ -1,6 +1,6 @@
 @media (min-width:768px) and (max-width:990px) {
     main {
-        font-family: "League Spartan";
+        font-family: "League Spartan", sans-serif;
 
         .servicios {
             color: nth($list: $colores , $n: 2);
@@ -8,6 +8,7 @@
             background: linear-gradient(to bottom right, nth($list: $colores , $n: 3) 50%, nth($list: $colores , $n: 1) 50%);
             padding-top: 50px;
             padding-bottom: 50px;
+
             h2 {
                 font-size: 20px;
                 font-weight: 400;
@@ -19,6 +20,7 @@
             }
 
             h3 {
+                font-family: "League Spartan", sans-serif;
                 font-size: 65px;
                 font-weight: 700;
                 line-height: 65px;
@@ -30,32 +32,34 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 30px;
+                gap: 50px;
 
                 .cardFinal {
-                    width: 320px;
-                    height: 340px;
+                    width: 430px;
+                    height: 310px;
                     border-radius: 18px;
                     background-color: nth($list: $colores , $n: 2);
+                    position: relative;
 
                     div {
                         .imagenCard {
                             img {
-                                width: 320px;
-                                height: 150px;
+                                width: 430px;
+                                height: 180px;
                                 border-radius: 18px 18px 0px 0px;
-                                object-fit:cover;
+                                object-fit: cover;
 
                             }
                         }
 
                         .textoCard {
-                            color: nth($list:$colores , $n: 3);
+                            color: nth($list: $colores , $n: 3);
                             padding-top: 10px;
                             margin: 10px;
+
                             h3 {
                                 width: 95%;
-                                font-size: 26px;
+                                font-size: 24px;
                                 font-weight: 800;
                                 line-height: 27.6px;
                                 text-align: left;
@@ -64,12 +68,110 @@
                             p {
                                 width: 95%;
                                 height: 100%;
-                                font-size: 23px;
+                                font-size: 21px;
                                 font-weight: 400;
                                 line-height: 24.15px;
                                 text-align: left;
                             }
                         }
+                    }
+
+                    .textoHover {
+                        display: none;
+                    }
+
+                    .textoHoverDos {
+                        display: none;
+                    }
+                }
+
+                .nav {
+                    width: 430px;
+                    padding-top: 15px;
+                    background-color: rgba(27, 115, 180, 0.8);
+                    border-radius: 18px;
+                    display: flex;
+                    justify-content: center;
+
+                    .list {
+
+                        .list__item {
+                            text-align: left;
+                            overflow: hidden;
+
+                            .list__button {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 50%;
+                                height: 25px;
+                                margin: 0 auto;
+
+                                .nav__link {
+                                    font-family: "League Spartan", sans-serif;
+                                    display: block;
+                                    text-decoration: none;
+                                    color: nth($list: $colores , $n: 2);
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                }
+
+                                .listArrow {
+                                    margin-left: auto;
+                                    transition: transform .3s;
+                                    width: 20px;
+                                    height: 20px;
+                                    margin-bottom: 5px;
+                                }
+
+                            }
+
+                            .list__show {
+                                transition: heigth .4s;
+                                height: 0;
+                                text-decoration: none;
+
+                                .list__Inside {
+                                    @include flex(column, center, center);
+                                    gap: 20px;
+                                    text-decoration: none;
+                                    padding-top: 25px;
+
+                                    .nav__link {
+                                        text-decoration: none;
+                                        color: nth($list: $colores , $n: 2);
+                                        width: 100%;
+                                        text-align: left;
+                                        font-size: 24px;
+                                        font-weight: 500;
+                                        line-height: 25px;
+                                        text-align: left;
+
+                                    }
+
+                                    .imagen {
+                                        width: 32px;
+                                        height: 32px;
+                                        margin-right: 10px;
+                                    }
+
+                                    .pepe {
+                                        @include flex(row, center, center);
+                                        width: 98%;
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+
+                    .list__item--click {
+                        cursor: pointer;
+                    }
+
+                    .arrow .listArrow {
+                        transform: rotate(90deg);
                     }
                 }
             }
