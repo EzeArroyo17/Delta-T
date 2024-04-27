@@ -15,6 +15,9 @@ html {
     background-color: #26163F;
     height: auto;
   }
+  header nav {
+    background-color: #26163F;
+  }
   header nav div a {
     padding: 30px;
   }
@@ -40,7 +43,7 @@ html {
     font-weight: 650;
     line-height: 18px;
     letter-spacing: 0.08em;
-    color: #ECF8F9;
+    color: #fFFFFF;
     text-align: left;
   }
   header .imagenCentral {
@@ -48,7 +51,7 @@ html {
     background-image: url(/Archivos/Logo-Imagen-central/imagen-header.jpg);
     background-size: cover;
     background-position: center;
-    color: #ECF8F9;
+    color: #fFFFFF;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -109,7 +112,7 @@ html {
     align-items: center;
     background-color: #26163F;
     height: 100%;
-    color: #ECF8F9;
+    color: #fFFFFF;
   }
   footer .imagenLogo {
     width: 90px;
@@ -141,6 +144,9 @@ html {
     height: auto;
     font-family: "League Spartan";
   }
+  header nav {
+    background-color: #26163F;
+  }
   header nav div a {
     padding: 50px;
   }
@@ -167,7 +173,7 @@ html {
     font-weight: 650;
     line-height: 25px;
     letter-spacing: 0.08em;
-    color: #ECF8F9;
+    color: #fFFFFF;
     text-align: left;
   }
   header .imagenCentral {
@@ -175,7 +181,7 @@ html {
     background-image: url(/Archivos/Logo-Imagen-central/imagen-header.jpg);
     background-size: cover;
     background-position: center;
-    color: #ECF8F9;
+    color: #fFFFFF;
     padding-left: 20px;
     height: 500px;
     display: flex;
@@ -239,7 +245,7 @@ html {
     align-items: center;
     background-color: #26163F;
     height: 100%;
-    color: #ECF8F9;
+    color: #fFFFFF;
     padding-bottom: 10px;
   }
   footer .imagenLogo {
@@ -275,8 +281,10 @@ html {
 }
 @media (min-width: 992px) {
   header {
-    background-color: #26163F;
     height: auto;
+  }
+  header nav {
+    background-color: #26163F;
   }
   header nav div a {
     padding: 40px;
@@ -302,7 +310,7 @@ html {
     padding: 0;
     font-size: 19px;
     font-weight: 650;
-    color: #ECF8F9;
+    color: #fFFFFF;
     display: inline;
   }
   header .imagenCentral {
@@ -310,9 +318,9 @@ html {
     background-image: url(/Archivos/Logo-Imagen-central/imagen-header.jpg);
     background-size: cover;
     background-position: center;
-    color: #ECF8F9;
+    color: #fFFFFF;
     padding-left: 20px;
-    height: 700px;
+    height: 750px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -371,6 +379,9 @@ html {
   header .imagenCentral .deltaAbajo {
     display: none;
   }
+  .scrol {
+    height: 100px;
+  }
 }
 @media (min-width: 992px) {
   footer {
@@ -380,7 +391,7 @@ html {
     justify-content: center;
     align-items: center;
     background-color: #26163F;
-    color: #ECF8F9;
+    color: #fFFFFF;
     padding-bottom: 10px;
   }
   footer .imagenLogo {
@@ -435,7 +446,7 @@ html {
     border-radius: 18px;
     opacity: 0px;
     background-color: #0766AD;
-    color: #ECF8F9;
+    color: #fFFFFF;
     position: relative;
   }
   main .cards .cardTotal div .cardImagen {
@@ -472,6 +483,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 50px;
   }
   main .diferenciales div h3 {
     font-size: 45px;
@@ -503,7 +515,7 @@ html {
   main .conocenos {
     padding-top: 50px;
     padding-bottom: 100px;
-    background-color: rgb(147, 188, 219);
+    background-color: #ECF8F9;
     height: 100%;
   }
   main .conocenos .textoConocenos {
@@ -582,7 +594,7 @@ html {
     font-family: "League Spartan";
   }
   main .servicios {
-    color: #ECF8F9;
+    color: #fFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -615,7 +627,7 @@ html {
     width: 90%;
     height: 100%;
     border-radius: 18px;
-    background-color: #ECF8F9;
+    background-color: #fFFFFF;
   }
   main .servicios .cardsOfrecimientos .cardFinal div .imagenCard img {
     width: 100%;
@@ -666,7 +678,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 100%;
     height: 10px;
     margin: 0 auto;
   }
@@ -674,16 +686,17 @@ html {
     font-family: "League Spartan", sans-serif;
     display: block;
     text-decoration: none;
-    color: #ECF8F9;
-    font-size: 20px;
+    color: #fFFFFF;
+    font-size: 19px;
     font-weight: 600;
   }
   main .servicios .cardsOfrecimientos .nav .list .list__item .list__button .listArrow {
     margin-left: auto;
     transition: transform 0.3s;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     margin-bottom: 5px;
+    margin-right: 5px;
   }
   main .servicios .cardsOfrecimientos .nav .list .list__item .list__show {
     transition: heigth 0.4s;
@@ -704,7 +717,7 @@ html {
   }
   main .servicios .cardsOfrecimientos .nav .list .list__item .list__show .list__Inside .nav__link {
     text-decoration: none;
-    color: #ECF8F9;
+    color: #fFFFFF;
     width: 100%;
     font-size: 20px;
     font-weight: 400;
@@ -786,7 +799,7 @@ html {
     height: 665px;
     border-radius: 28px;
     background-color: #0766AD;
-    color: #ECF8F9;
+    color: #fFFFFF;
   }
   main .contacto .cuerpoFormulario .textoFormulario {
     width: 95%;
@@ -809,6 +822,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    width: 100%;
   }
   main .contacto .cuerpoFormulario form .primeraFormulario {
     display: flex;
@@ -817,28 +831,46 @@ html {
     align-items: center;
     color: rgb(147, 188, 219);
     gap: 10px;
+    width: 100%;
   }
   main .contacto .cuerpoFormulario form .primeraFormulario input {
-    width: 280px;
+    width: 90%;
     height: 43px;
     border-radius: 10px;
+  }
+  main .contacto .cuerpoFormulario form .intermedioFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   main .contacto .cuerpoFormulario form .intermedioFormulario input {
-    width: 280px;
+    width: 90%;
     height: 43px;
     border-radius: 10px;
   }
+  main .contacto .cuerpoFormulario form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   main .contacto .cuerpoFormulario form div textarea {
-    width: 280px;
+    width: 90%;
     height: 144px;
     border-radius: 10px;
   }
+  main .contacto .cuerpoFormulario form div {
+    width: 100%;
+  }
   main .contacto .cuerpoFormulario form div .button {
-    width: 280px;
+    width: 80%;
     height: 43px;
     border-radius: 10px;
     background-color: #E55807;
-    color: #ECF8F9;
+    color: #fFFFFF;
     font-size: 20px;
     font-weight: 700;
     line-height: 18.4px;
@@ -868,7 +900,7 @@ html {
   }
   main .cards {
     padding-bottom: 100px;
-    padding-top: 50px;
+    padding-top: 100px;
   }
   main .cards .cardTotal {
     display: flex;
@@ -883,7 +915,7 @@ html {
     border-radius: 18px;
     opacity: 0px;
     background-color: #0766AD;
-    color: #ECF8F9;
+    color: #fFFFFF;
     position: relative;
   }
   main .cards .cardTotal div .cardImagen {
@@ -955,7 +987,7 @@ html {
   main .conocenos {
     padding-top: 50px;
     padding-bottom: 100px;
-    background-color: rgb(147, 188, 219);
+    background-color: #ECF8F9;
   }
   main .conocenos .textoConocenos {
     display: flex;
@@ -1028,7 +1060,7 @@ html {
     font-family: "League Spartan", sans-serif;
   }
   main .servicios {
-    color: #ECF8F9;
+    color: #fFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1062,7 +1094,7 @@ html {
     width: 430px;
     height: 310px;
     border-radius: 18px;
-    background-color: #ECF8F9;
+    background-color: #fFFFFF;
     position: relative;
   }
   main .servicios .cardsOfrecimientos .cardFinal div .imagenCard img {
@@ -1113,7 +1145,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 80%;
     height: 25px;
     margin: 0 auto;
   }
@@ -1121,15 +1153,15 @@ html {
     font-family: "League Spartan", sans-serif;
     display: block;
     text-decoration: none;
-    color: #ECF8F9;
+    color: #fFFFFF;
     font-size: 24px;
     font-weight: 600;
   }
   main .servicios .cardsOfrecimientos .nav .list .list__item .list__button .listArrow {
     margin-left: auto;
     transition: transform 0.3s;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin-bottom: 5px;
   }
   main .servicios .cardsOfrecimientos .nav .list .list__item .list__show {
@@ -1148,7 +1180,7 @@ html {
   }
   main .servicios .cardsOfrecimientos .nav .list .list__item .list__show .list__Inside .nav__link {
     text-decoration: none;
-    color: #ECF8F9;
+    color: #fFFFFF;
     width: 100%;
     text-align: left;
     font-size: 24px;
@@ -1237,7 +1269,7 @@ html {
     height: 800px;
     border-radius: 28px;
     background-color: #0766AD;
-    color: #ECF8F9;
+    color: #fFFFFF;
   }
   main .contacto .cuerpoFormulario .textoFormulario {
     width: 95%;
@@ -1290,7 +1322,7 @@ html {
     height: 45px;
     border-radius: 10px;
     background-color: #E55807;
-    color: #ECF8F9;
+    color: #fFFFFF;
     font-size: 20px;
     font-weight: 700;
     line-height: 18.4px;
@@ -1321,15 +1353,13 @@ html {
   }
   main .cards {
     padding-top: 100px;
-    border-left: 30px;
-    border-right: 30px;
   }
   main .cards .cardTotal {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
   }
   main .cards .cardTotal div {
     width: 430px;
@@ -1337,7 +1367,7 @@ html {
     border-radius: 18px;
     opacity: 0px;
     background-color: #0766AD;
-    color: #ECF8F9;
+    color: #fFFFFF;
     position: relative;
   }
   main .cards .cardTotal div .cardImagen {
@@ -1416,7 +1446,7 @@ html {
   main .conocenos {
     margin: 0;
     padding: 0;
-    padding-top: 200px;
+    padding-top: 50px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: row;
@@ -1497,7 +1527,7 @@ html {
 }
 @media (min-width: 991px) {
   main .servicios {
-    color: #ECF8F9;
+    color: #fFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1527,7 +1557,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative;
@@ -1537,7 +1567,7 @@ html {
     width: 430px;
     height: 310px;
     border-radius: 18px;
-    background-color: #ECF8F9;
+    background-color: #fFFFFF;
     transition: all 400ms ease-out;
   }
   main .servicios .cardsOfrecimientos .cardFinal div {
@@ -1759,7 +1789,7 @@ html {
     height: 535px;
     border-radius: 28px;
     background-color: #0766AD;
-    color: #ECF8F9;
+    color: #fFFFFF;
   }
   main .contacto .cuerpoFormulario .textoFormulario {
     margin-left: 30px;
@@ -1814,7 +1844,7 @@ html {
     height: 45px;
     border-radius: 10px;
     background-color: #E55807;
-    color: #ECF8F9;
+    color: #fFFFFF;
     font-size: 20px;
     font-weight: 700;
     line-height: 18.4px;
@@ -1859,7 +1889,7 @@ html {
     height: 500px;
     border-radius: 28px;
     background-color: #0766AD;
-    color: #ECF8F9;
+    color: #fFFFFF;
   }
   main .contacto .cuerpoFormulario .textoFormulario {
     margin-left: 20px;
@@ -1915,7 +1945,7 @@ html {
     height: 45px;
     border-radius: 10px;
     background-color: #E55807;
-    color: #ECF8F9;
+    color: #fFFFFF;
     font-size: 20px;
     font-weight: 700;
     line-height: 18.4px;
@@ -1944,7 +1974,7 @@ html {
   main .conocenos {
     margin: 0;
     padding: 0;
-    padding-top: 200px;
+    padding-top: 50px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: row;
@@ -2015,13 +2045,12 @@ html {
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
   }
-}
-.imagen:hover {
-  transform: scale(1.3);
-}
-
-.imagenHover:hover {
-  transform: scale(1.3);
+  .imagen:hover {
+    transform: scale(1.3);
+  }
+  .imagenHover:hover {
+    transform: scale(1.3);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

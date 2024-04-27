@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./Archivos/Logo-Imagen-central/Logo delta sin fondo.png" alt="parte trasera auto"></a>
@@ -59,7 +59,6 @@
                     acondicionado y calefacción para tu empresa.</p>
             </div>
             <p class="deltaArriba">DELTA T</p>
-            <p class="deltaAbajo">DELTA T</p>
         </div>
 
     </header>
@@ -198,8 +197,8 @@
                     <ul class="list">
                         <li class="list__item list__item--click">
                             <div class="list__button list__button--click">
-                                <a class="nav__link">DESCRUBI MAS</a>
-                                <img class="listArrow" src="./Archivos/Iconos-card-uno/icono-flecha.png" alt="">
+                                <a class="nav__link">PRODUCTOS DISPONIBLES</a>
+                                <img class="listArrow" src="./Archivos/Iconos-card-uno/FlechaDerecha.png" alt="">
                             </div>
                             <ul class="list__show">
                                 <li class="list__Inside">
@@ -229,18 +228,17 @@
                         </div>
                         <div class="textoHoverDos">
                             <li>
-                                <a download="BAJA SILUETA STANDARD" href="./Downloads/Archivos-Pdf/BGH1.pdf">BAJA
+                                <a>BAJA
                                     SILUETA STANDARD</a>
-                                <img class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
+                                <img download="BAJA SILUETA STANDARD" href="./Downloads/Archivos-Pdf/BGH1.pdf" class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
                             </li>
                             <li>
-                                <a download="CASSETTE" href="./Downloads/Archivos-Pdf/BGH2.pdf">CASSETTE</a>
-                                <img class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
+                                <a>CASSETTE</a>
+                                <img download="CASSETTE" href="./Downloads/Archivos-Pdf/BGH2.pdf" class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
                             </li>
                             <li>
-                                <a download="SPLIT DE CONDUCTO MULTIFUNCION"
-                                    href="./Downloads/Archivos-Pdf/BGH3.pdf">SPLIT DE CONDUCTO MULTIFUNCION</a>
-                                <img class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
+                                <a>SPLIT DE CONDUCTO MULTIFUNCION</a>
+                                <img download="SPLIT DE CONDUCTO MULTIFUNCION" href="./Downloads/Archivos-Pdf/BGH3.pdf" class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
                             </li>
                         </div>
                     </div>
@@ -251,27 +249,24 @@
                         <li class="list__item list__item--click">
                             <div class="list__button list__button--click">
                                 <a class="nav__link">CATALOGOS</a>
-                                <img class="listArrow" src="./Archivos/Iconos-card-uno/icono-flecha.png" alt="">
+                                <img class="listArrow" src="./Archivos/Iconos-card-uno/FlechaDerecha.png" alt="">
                             </div>
                             <ul class="list__show">
                                 <li class="list__Inside list__Inside">
 
                                     <div class="pepe">
-                                        <a class="nav__link nav-link--inside" download="BAJA SILUETA STANDARD"
-                                            href="./Downloads/Archivos-Pdf/BGH1.pdf">BAJASILUETA STANDARD</a>
-                                        <img class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
+                                        <a class="nav__link nav-link--inside" >BAJASILUETA STANDARD</a>
+                                        <img download="BAJA SILUETA STANDARD" href="./Downloads/Archivos-Pdf/BGH1.pdf" class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
                                     </div>
 
                                     <div class="pepe">
-                                        <a class="nav__link nav-link--inside" download="CASSETTE"
-                                            href="./Downloads/Archivos-Pdf/BGH2.pdf">CASSETTE</a>
-                                        <img class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
+                                        <a class="nav__link nav-link--inside" >CASSETTE</a>
+                                        <img download="CASSETTE" href="./Downloads/Archivos-Pdf/BGH2.pdf" class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
                                     </div>
 
                                     <div class="pepe">
-                                        <a class="nav__link nav-link--inside" download="SPLIT DE CONDUCTO MULTIFUNCION"
-                                            href="./Downloads/Archivos-Pdf/BGH3.pdf">SPLIT DE CONDUCTO MULTIFUNCION</a>
-                                        <img class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
+                                        <a class="nav__link nav-link--inside" >SPLIT DE CONDUCTO MULTIFUNCION</a>
+                                        <img download="SPLIT DE CONDUCTO MULTIFUNCION" href="./Downloads/Archivos-Pdf/BGH3.pdf" class="imagen" src="./Archivos/Iconos-card-uno/icono-descarga.png" alt="">
                                     </div>
                                 </li>
                             </ul>
@@ -382,11 +377,11 @@
                         y refrigeración!</p>
                 </div>
 
-                <form action="enviar.php" method="post">
+                <form>
                     <div class="primeraFormulario">
-                        <input class="nombre" type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                        <input class="name" type="text" id="name" name="name" required placeholder="Nombre">
 
-                        <input class="phone" type="phone" name="número de celular" id="número de celular"
+                        <input class="phone" type="phone" name="phone" id="número de celular"
                             placeholder="Número de celular">
                     </div>
 

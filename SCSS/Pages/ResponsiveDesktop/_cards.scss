@@ -3,14 +3,12 @@
         font-family: "League Spartan";
         .cards {
             padding-top: 100px;
-            border-left: 30px;
-            border-right: 30px;
             .cardTotal {
                 display: flex;
                 flex-wrap:wrap ;
                 justify-content: center;
                 align-items: center;
-                gap: 100px;
+                gap: 50px;
                 div {
                     width: 430px;
                     height: 310px;

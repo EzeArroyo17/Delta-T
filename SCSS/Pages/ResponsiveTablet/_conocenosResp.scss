@@ -3,7 +3,7 @@
         .conocenos {
             padding-top: 50px;
             padding-bottom: 100px;
-            background-color: nth($list:$colores , $n:5 );
+            background-color: nth($list:$colores , $n:7 );
             .textoConocenos {
                 @include flex(column, center, center);
                 flex-wrap: wrap;

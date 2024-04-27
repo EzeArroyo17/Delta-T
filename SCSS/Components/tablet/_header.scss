@@ -4,6 +4,7 @@
         height: auto;
         font-family: "League Spartan";
         nav {
+            background-color: nth($list: $colores , $n: 4);
             div {
                 a {
                     padding: 50px;

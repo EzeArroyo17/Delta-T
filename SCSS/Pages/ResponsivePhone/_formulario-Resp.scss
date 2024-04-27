@@ -36,36 +36,43 @@
                 form {
                     @include flex(column, center, center);
                     gap: 10px;
+                    width: 100%;
                     .primeraFormulario {
                         @include flex(column, center, center);
                         color: nth($list: $colores , $n: 5);
                         gap: 10px;
+                        width: 100%;
                         input {
-                            width: 280px;
+                            width: 90%;
                             height: 43px;
                             border-radius: 10px;
                         }
                         .phone {}
                     }
                     .intermedioFormulario {
+                        @include flex(column, center, center);
+                        width: 100%;
                         input {
-                            width: 280px;
+                            width: 90%;
                             height: 43px;
                             border-radius: 10px;
                         }
                     }
 
                     div {
+                        @include flex(column, center, center);
+                        width: 100%;
                         textarea {
-                            width: 280px;
+                            width: 90%;
                             height: 144px;
                             border-radius: 10px;
                         }
                     }
 
                     div {
+                        width: 100%;
                         .button {
-                            width: 280px;
+                            width: 80%;
                             height: 43px;
                             border-radius: 10px;
                             background-color: nth($list: $colores , $n: 3);
