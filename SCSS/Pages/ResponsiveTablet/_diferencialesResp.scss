@@ -3,6 +3,8 @@
         .diferenciales {
             color: nth($list: $colores , $n: 3);
             @include flex(column, center, center);
+            padding-top: 100px;
+            padding-bottom: 50px;
             div {
                 h3 {
                     font-size: 55px;

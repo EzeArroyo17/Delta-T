@@ -3,7 +3,7 @@
         .contacto {
             @include flex( "", center, center);
             padding-bottom: 100px;
-            padding-top: 100px;
+            padding-top: 150px;
 
             .cuerpoFormulario {
                 @include flex(column, center, center);

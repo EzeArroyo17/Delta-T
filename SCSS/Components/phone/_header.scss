@@ -5,6 +5,7 @@
 
         nav {
             background-color: nth($list: $colores , $n: 4);
+            height: auto;
             div {
 
                 a {
@@ -87,7 +88,8 @@
                     padding: 0;
                     width: 70%;
                     span {
-                        text-decoration: underline nth($list: $colores , $n: 3) 10px;
+                        color: nth($list:$colores , $n:3 );
+                        filter: drop-shadow(5px 5px 5px black);
                     }
                 }
 

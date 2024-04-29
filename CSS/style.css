@@ -12,11 +12,12 @@ html {
 
 @media (max-width: 767px) {
   header {
-    background-color: #26163F;
+    background-color: rgba(38, 22, 63, 0.9411764706);
     height: auto;
   }
   header nav {
-    background-color: #26163F;
+    background-color: rgba(38, 22, 63, 0.9411764706);
+    height: auto;
   }
   header nav div a {
     padding: 30px;
@@ -87,7 +88,8 @@ html {
     width: 70%;
   }
   header .imagenCentral .segundaParte .subrayado span {
-    text-decoration: underline #E55807 10px;
+    color: #E55807;
+    filter: drop-shadow(5px 5px 5px black);
   }
   header .imagenCentral .segundaParte p {
     padding: 0;
@@ -110,7 +112,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #26163F;
+    background-color: rgba(38, 22, 63, 0.9411764706);
     height: 100%;
     color: #fFFFFF;
   }
@@ -140,12 +142,10 @@ html {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   header {
-    background-color: #26163F;
-    height: auto;
     font-family: "League Spartan";
   }
   header nav {
-    background-color: #26163F;
+    background-color: rgba(38, 22, 63, 0.9411764706);
   }
   header nav div a {
     padding: 50px;
@@ -183,7 +183,7 @@ html {
     background-position: center;
     color: #fFFFFF;
     padding-left: 20px;
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,7 +219,8 @@ html {
     padding: 0;
   }
   header .imagenCentral .segundaParte .subrayado span {
-    text-decoration: underline #E55807 15px;
+    color: #E55807;
+    filter: drop-shadow(5px 5px 5px black);
   }
   header .imagenCentral .segundaParte p {
     padding: 0;
@@ -243,7 +244,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #26163F;
+    background-color: rgba(38, 22, 63, 0.9411764706);
     height: 100%;
     color: #fFFFFF;
     padding-bottom: 10px;
@@ -284,7 +285,8 @@ html {
     height: auto;
   }
   header nav {
-    background-color: #26163F;
+    background-color: rgba(38, 22, 63, 0.9411764706);
+    height: auto;
   }
   header nav div a {
     padding: 40px;
@@ -320,7 +322,7 @@ html {
     background-position: center;
     color: #fFFFFF;
     padding-left: 20px;
-    height: 750px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -355,8 +357,9 @@ html {
     width: 70%;
     padding: 0;
   }
-  header .imagenCentral .segundaParte .subrayado span {
-    text-decoration: underline #E55807 15px;
+  header .imagenCentral .segundaParte .subrayado .subrayadoDos {
+    color: #E55807;
+    filter: drop-shadow(5px 5px 5px black);
   }
   header .imagenCentral .segundaParte p {
     padding: 0;
@@ -367,11 +370,11 @@ html {
     width: 50%;
   }
   header .imagenCentral .deltaArriba {
-    font-size: 128px;
+    font-size: 110px;
     font-weight: 900;
     line-height: 117.76px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.0509803922);
+    color: rgba(255, 255, 255, 0.031372549);
     position: absolute;
     top: 100px;
     left: 0;
@@ -390,7 +393,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #26163F;
+    background-color: rgba(38, 22, 63, 0.9411764706);
     color: #fFFFFF;
     padding-bottom: 10px;
   }
@@ -678,7 +681,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 91%;
     height: 10px;
     margin: 0 auto;
   }
@@ -689,6 +692,7 @@ html {
     color: #fFFFFF;
     font-size: 19px;
     font-weight: 600;
+    width: 100%;
   }
   main .servicios .cardsOfrecimientos .nav .list .list__item .list__button .listArrow {
     margin-left: auto;
@@ -710,7 +714,7 @@ html {
     align-items: center;
     gap: 15px;
     text-decoration: none;
-    padding-top: 20px;
+    padding-top: 24px;
   }
   main .servicios .cardsOfrecimientos .nav .list .list__item .list__show .list__Inside .list__Inside--Dos {
     display: flex;
@@ -725,10 +729,10 @@ html {
     line-height: 20px;
     justify-content: left;
   }
-  main .servicios .cardsOfrecimientos .nav .list .list__item .list__show .list__Inside .imagen {
+  main .servicios .cardsOfrecimientos .nav .list .list__item .list__show .list__Inside a .imagen {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   main .servicios .cardsOfrecimientos .nav .list .list__item .list__show .list__Inside .pepe {
     display: flex;
@@ -952,6 +956,8 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
   main .diferenciales div h3 {
     font-size: 55px;
@@ -999,7 +1005,7 @@ html {
   main .conocenos .textoConocenos .texto {
     gap: 10px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -1160,8 +1166,8 @@ html {
   main .servicios .cardsOfrecimientos .nav .list .list__item .list__button .listArrow {
     margin-left: auto;
     transition: transform 0.3s;
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 14px;
     margin-bottom: 5px;
   }
   main .servicios .cardsOfrecimientos .nav .list .list__item .list__show {
@@ -1188,7 +1194,7 @@ html {
     line-height: 25px;
     text-align: left;
   }
-  main .servicios .cardsOfrecimientos .nav .list .list__item .list__show .list__Inside .imagen {
+  main .servicios .cardsOfrecimientos .nav .list .list__item .list__show .list__Inside a .imagen {
     width: 32px;
     height: 32px;
     margin-right: 10px;
@@ -1258,7 +1264,7 @@ html {
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 150px;
   }
   main .contacto .cuerpoFormulario {
     display: flex;

@@ -119,8 +119,8 @@
                                 .listArrow {
                                     margin-left: auto;
                                     transition: transform .3s;
-                                    width: 15px;
-                                    height: 15px;
+                                    width: 13px;
+                                    height: 14px;
                                     margin-bottom: 5px;
                                 }
 
@@ -149,11 +149,13 @@
 
                                     }
 
-                                    .imagen {
-                                        width: 32px;
-                                        height: 32px;
-                                        margin-right: 10px;
-                                    }
+                                    a{
+                                        .imagen {
+                                            width: 32px;
+                                            height: 32px;
+                                            margin-right: 10px;
+                                        }
+                                    }                                
 
                                     .pepe {
                                         @include flex(row, center, center);

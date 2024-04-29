@@ -102,10 +102,10 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                width: 100%;
+                                width: 91%;
                                 height: 10px;
                                 margin: 0 auto;
-
+                                
                                 .nav__link {
                                     font-family: "League Spartan", sans-serif;
                                     display: block;
@@ -113,6 +113,7 @@
                                     color: nth($list: $colores , $n: 2);
                                     font-size: 19px;
                                     font-weight: 600;
+                                    width: 100%;
                                 }
 
                                 .listArrow {
@@ -135,7 +136,7 @@
                                     @include flex(column, center, center);
                                     gap: 15px;
                                     text-decoration: none;
-                                    padding-top: 20px;
+                                    padding-top: 24px;
 
                                     .list__Inside--Dos {
                                         display: flex;
@@ -152,10 +153,12 @@
                                         justify-content: left;
                                     }
 
-                                    .imagen {
-                                        width: 30px;
-                                        height: 30px;
-                                        margin-right: 10px;
+                                    a{
+                                        .imagen {
+                                            width: 30px;
+                                            height: 30px;
+                                            margin-right: 20px;
+                                        }
                                     }
 
                                     .pepe {
